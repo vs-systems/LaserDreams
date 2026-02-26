@@ -351,12 +351,33 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
     .nav-links {
-        display: none;
-        /* simple mobile nav approach for static */
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a.btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
     }
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding: 0 10px;
     }
 }
