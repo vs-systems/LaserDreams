@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Dreams - Próximamente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Efecto de luz laser de fondo */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #111 0%, #000 80%);
+            z-index: -1;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 600px;
+        }
+
+        .brand-name {
+            font-size: 3.5rem;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: #00d4ff; /* Celeste Laser */
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            opacity: 0.7;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .distributor-tag {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #aaa;
+            margin-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+        }
+
+        .brand-highlight {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 30px;
+            font-size: 0.75rem;
+            opacity: 0.4;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="brand-name">LASER<span style="font-weight: 300; color: #fff;">DREAMS</span></h1>
+        <p class="subtitle">SITIO EN CONSTRUCCIÓN</p>
+
+        <div class="contact-box">
+            <p style="margin-bottom: 20px;">Estamos preparando nuestro nuevo catálogo online.</p>
+            
+            <a href="https://wa.me/5492235772165" class="btn-whatsapp">
+                CONTACTAR POR WHATSAPP
+            </a>
+
+            <div class="distributor-tag">
+                Distribuidor Directo <br>
+                <span class="brand-highlight">Bigdipper Laser</span> & <span class="brand-highlight">Sanyi Lights</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 LASERDREAMS.COM.AR | MAR DEL PLATA
+    </div>
+
+</body>
+</html>
