@@ -1,0 +1,1286 @@
+[
+  {
+    "id": 149,
+    "model": "SPL-LED-1810",
+    "description": "PAR LED 18*10W (RGBWA/UV)",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810/1758138535347_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810/1758138537970_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1810/content/documents/1757700741877_SPL-LED-1810%20User%20Manua.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/wL2ahZX2cGc?si=FI9R68n2usluUc9g"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T18:12:23.267313+00:00",
+    "updated_at": "2025-09-17T19:49:00.31332+00:00",
+    "technical_description": "Voltage：100-240V，50/60HZ；\nPower Consumption：250W；\nLED: 18*10W RGBWA-UV 6in1 LED\nAverage lifespan: 50,000 hours\nLED adopts static constant current driving mode, with high constant current precision; the light source\ncan be dimmed individually, with 256-level brightness, no flicker;\nDMX Channel: 10/6 CH\nControl mode: DMX512/Master-slave/Auto/Sound/ panel menu control\nNew optical design and high brightness of glass lens\nStrobe:1-23HZ or random strobe\nElectrical dimming：0%~100%\nDMX Connector: 3-pin XLR input/output\nWorking temperature: -10º~45º\nIP Rate: IP20",
+    "category_id": 4
+  },
+  {
+    "id": 167,
+    "model": "SPL-LED-800",
+    "description": "CABEZAL MOVIL DE LED 800W PROFILE",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-800/1770126475838_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-800/1770126478400_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-800/1770126481161_4.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-800/1770126484068_2.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-800/content/documents/1770210786144_800BSWF%208.3-20260204100437.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2026-02-03T13:48:08.173923+00:00",
+    "updated_at": "2026-02-04T13:13:08.827863+00:00",
+    "technical_description": "Power\nInput voltage: AC100-240V 50/60Hz\nPower consumption: 900W\nFixture\nIP rating: IP20\nCooling method: fan cooling\nMax ambient temp: 45℃\nCase color: black\nLED\nLED: 800W white LED module\nColor Temp:8000K\nCRI:>80\nAverage lifespan: 20,000 hours\nControl\nDMX channel: 36CH\nDMX connector: 3Pin XLR input/output\nPower connector: PowerCon input\nControl mode: DMX/master-slave/auto/sound/RDM\nPan: 540º16bits, Tilt: 270º16bits\nPrecise and fast Pan/Tilt movements\nMotorized focus, frost, zoom, iris, split color\n3-phase motor for Pan/Tilt, automatic position correction\nStatic gobo wheel: 8gobos plus open with gobo shaking function\nRotating gobo wheel: 7 replaceable gobos plus open with gobo shaking function\nStatic color wheel: 6colors plus open,and split color effect\nSmooth CMY+CTO color mixing system\nPrism 1: 3-facet rotating\nAperture: 5-100% smooth adjustment\nFull color LCD touch display with 4 buttons\nWith RMD function and software upload via DMX cable\nCutting disc: a set of controllable light spot cutting angle system composed of\n4 corner cutting pieces, the entire cutting angle system can rotate by 90º, and\nthrough precise control of the cutting lens, can create any direction of triangle,\nrhombus, rectangle and other shapes of light spots\nColor effect\nColor: 6 colors+open, split color,CMY+CTO color mixing\nBeam angle: 4-49°\nDimming: 0-100% linear\nStrobe: 0-25Hz, random strobe and pulse strobe \nLux: 110,000Lux @ 5m & 4°(spot Ø 39mm), \nDimension\nProduct dimension: 42x29x81cm (LxWxH)\nN.W: 35KGS\nFlight case packing",
+    "category_id": 1
+  },
+  {
+    "id": 17,
+    "model": "SPL-LED-90S",
+    "description": "90W LED spot moving head",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-90S/1756923729280_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-90S/1756923731247_2.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-90S/content/documents/1757337966413_90W%20SPOT.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Specification: 100W LED spot moving head\nSPL-LED-100S\nFeature:\n1. 100W LED spot with LED ring effect\n2. Motorized focus,frost filter,split color\n3. 2 gobo wheels+1 color wheel + 1 prisms \nPower\nInput voltage: AC100-240V 50/60Hz\nPower consumption: 150W\nFixture\nIP rating：IP20\nCooling method: fan cool\nMax ambient temp: 45℃\nCase color: black\nLamp\nLamp: 100W white LED, 24pcs RGB 3in1 LED\nAverage lifespan: 5,000 hours\nControl\nDMX channel: 15CH\nDMX connector: 3Pin XLR input/output\nPower connector: PowerCon input/output\nControl mode: DMX/master-slave/auto/sound\nPan: 540º16bits, Tilt: 200º16bits\nPrecise and fast Pan/Tilt movements\n5 dimmer curves,4-button LCD display \nPrism：5-facet rotating prism\nGobo wheel 1: 6 replaceable gobos plus open\nGobo wheel 2: 7 static gobos plus open \nColor wheel: 8 colors plus open\nGobo shake effect \nMotorized focus\nColor effect\nColor: 8 colors+open\nBeam angle: 12-18°\nDimming: 0-100% \nStrobe: 0.3-20Hz\nLux : 81810Lux at 1m, 20000Lux at 2m,8484Lux at 3m\nDimension\nProduct dimension: 26x20x29cm (LxWxH)\nN.W: 6.1KG",
+    "category_id": 1
+  },
+  {
+    "id": 130,
+    "model": "SPL-LED-M560DF",
+    "description": "BARRA LED+STROBO 5*60W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M560DF/1758135516742_JPF_5599.jpg",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M560DF/1758135519898_JPF_5607.jpg",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M560DF/1758135524714_JPF_5609.jpg"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-M560DF/content/documents/1757357791262_SPL-LED-M560DF%20%20-20250908155545.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/MhNi_5SC9aE?si=dSx4vVu1VOFeRR6G"
+    ],
+    "new": false,
+    "created_at": "2025-09-08T18:56:33.622822+00:00",
+    "updated_at": "2025-09-17T18:58:50.395969+00:00",
+    "technical_description": "Input power supply: AC100-240V\nPower frequency: 50/60Hz\nPower: 480W\nLEDs: 5pcs 60W RGBW Quad LED with single LED control. 96pcs 0.2W white led\nwith 16 sections. 72pcs 0.2W RGB Tri LED with 12 sections\nFeatures: XY moving+beam+blinder+XY infinite rotation+auxiliary light\nDimming: 0-100% linear dimming\nStrobe: 1S/25 (built-in multiple strobe effects)\nChannel: Channel mode 33CH/53CH/69CH/105CH\nControl: DMX512, auto,sound activated,master-slave\nX scanning: 540 ° (16bit accuracy)\nY scanning: 270 ° (16bit accuracy)\nDisplay: LCD screen",
+    "category_id": 2
+  },
+  {
+    "id": 141,
+    "model": "SPL-LED-200Z",
+    "description": "PAR Z. LED 200W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-200Z/1758138036815_5.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-200Z/1758138038734_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-200Z/1758138041090_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-200Z/content/documents/1757690760898_SPL-LED-200Z%20User%20Manual.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-12T15:26:03.96482+00:00",
+    "updated_at": "2025-09-17T19:40:42.981203+00:00",
+    "technical_description": "1/2/3 Channel Mode;\nDimmer, Strobe;\nIdeal for Professional stages, Concerts, Clubs, Discotheques, Mobile Djs, etc. \nInput Voltage: AC100V~240V,50/60Hz\nTotal Power consumption: 230W\nBeam Angle: Stepless manual zoom from 10°to 50°\nIP rating: IP20\nLED Sources: 200W White COB LED\nCRI/R9: CRI>95;R9>90\nColor Temperature: 3200K\nProduct Dimension: 498x265x265mm\nWeight(N.W)： 4.0 Kgs",
+    "category_id": 4
+  },
+  {
+    "id": 150,
+    "model": "SPL-LED-630PS",
+    "description": "PIN SPOT LED 6*30W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-630PS/1758138572236_5.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-630PS/1758138574191_6.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-630PS/1758138576268_7.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-630PS/content/documents/1757700838886_User's%20Manul%206X30W%20floodlight-20250912151316.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-12T18:14:01.419867+00:00",
+    "updated_at": "2025-09-17T19:49:38.120846+00:00",
+    "technical_description": "1. Voltage: AC100-240V 50/60Hz\n2. Power: 200W\n3. Lamp Source: 6pcs 30W amber color lamps\n4. Dimming: 16bit 0~100% linear dimming\n5. Control Mode: DMX512, automatic, master/slave mode, sound, with RDM function\n6. Channel: CH2, CH6, CH3, CH8, CH10\n7. Working Environment: -30℃- 50℃\n8. Strobe: 1-30Hz\n9. Features: running, can be used as surface light\n10. Power connection: DMX512 input and output / power input and output\n11. Electrical strength: 1.5KV/3M\n12. Insulation resistance: 2M ohms\n13. Protection function; overheating protection/over current protection/over voltage protection\n14. Mask: glass lens\n15. Housing: Aluminum\n16.. IP Rate: IP20\n17. Size (cm): 99 * 8.5 * 31\n18. Weight (kg): 8.2 kg",
+    "category_id": 4
+  },
+  {
+    "id": 160,
+    "model": "SPL-LED-1600W",
+    "description": "STUDIO PANEL LED 1600W RGB",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1600W/1758030001971_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1600W/1758030004815_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1600W/1758030007101_5.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1600W/content/documents/1758030009660_SPL-LED-1600%20STUDIO%20LUX%201600.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-16T13:40:11.308973+00:00",
+    "updated_at": "2025-09-16T13:40:11.308973+00:00",
+    "technical_description": "-ELECTRICAL\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 350W\n-LIGHT SOURCE\nSource: SMD3030 CW/WW350W\nSMD5054 RGB300W\nCRI: ≥97，R1-R12≥95\nCCT: 2700K-10000K\n8 BIT RESOLUTION\n16 BIT RESOLUTION\nAverage lifespan: 50,000 hours\n-COLOR SYSTEM\nColor : CW/WW/RGB\n-ELECTRONIC\nLinear dimming: 0-100% Linear\nDimmer Strobe: 1-25Hz\n-OPTICS\nBeam Angle:110\n-DYNAMIC EFFECTS\nHigh CRI lighting\nColor Mixing\n-CONTROL\n8 BIT RESOLUTION:6/6/9CH\n16 BIT RESOLUTION:8/8/15CH\nDMX connector: RJ45+3-Pin (or 5-Pin) XLR\nPower connector: TRU1 input/output\nControl mode:DMX512/Master-Slave/Art-Net/sACN/RDM\n-PHYSICAL\nIP Rating:IP20\nHousing color: black\nWorking ambient temp.:-10℃ to 40℃ (-14℉ to 104℉)\nDimensions:737*382*171mm/29.1*15.04*6.7in\nWeight:11.8kg/26.1lb",
+    "category_id": 19
+  },
+  {
+    "id": 126,
+    "model": "SPL-RGB-110",
+    "description": "10W RGB FULL COLOR ANIMATION LASER LIGHT",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-110/1757342826425_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-110/1757342828342_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-110/content/documents/1757342829161_SPL-RGB-110-A(10W)%20User%20Manual.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-08T14:47:11.119346+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Input voltage: AC100-240V, 50/60Hz\nFuse: BGDP ￠5x20mm 250VAC T5A\nTotal power:64W\nLight source: 10W RGB semi-conductor integrated laser\nModulation: Analog\nControl mode: Auto/Sound/DMX512/ILDA/Master-slave\nChannels：17CH/21CH\nBuilt-in static patterns: 200 pcs\nBuilt-in dynamic patterns: 120 pcs\nScanning system: 20Kpps Scanner\nBeam angle:±30º\nSurface temp: Tb=45ºC ( this data testing when the environment temp is 30ºC)\nWorking temp: 10ºC--65ºC\nSize:280*320*220 M",
+    "category_id": 5
+  },
+  {
+    "id": 151,
+    "model": "SPL-LED-616",
+    "description": "MINI BRUT 2*100W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-616/1758138639790_Mesa%20de%20trabajo%207.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-616/1758138641913_Mesa%20de%20trabajo%208.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-616/content/documents/1757702186538_SPL-LED-616-B%20User%20Manual.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/6JcIWKWPm7c?si=YzIqc0kR3D7Qs_tw"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T18:36:28.653868+00:00",
+    "updated_at": "2025-09-17T19:50:43.944806+00:00",
+    "technical_description": "Voltage：100-240V，50/60HZ；\nPower Consumption：210W；\nLED: LED WW/CW, 48*5050 LED\nOperation mode: master-slave/DMX512/Auto/Sound\nDMX Channel: 5 options (CH40/CH41/CH42/CH43/CH44 refer to the channel table)\nDimming: 0-100% linear dimming\nFeature:Strobe effect\nWorking temp.: -30º~~45º\nStrobe: 1-23Hz\nAppearance: Metal, Black\nConnection method: DMX512 input and output / power input and output.\nIP rating: IP20",
+    "category_id": 4
+  },
+  {
+    "id": 2,
+    "model": "SPL-LED-681CMY",
+    "description": "600W LED CMY+BSW Moving Head Light",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-681CMY/1756918601424_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-681CMY/1756918602851_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-681CMY/1756918603867_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-681CMY/content/documents/1757338606474_VERSATILIS%20%20680CMY%20USER%20MANUAL.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=6fQ1Ka-cATg"
+    ],
+    "new": true,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Specification :\nPower\nInput voltage: AC100-240V 50/60Hz\nPower consumption: 700W\nFuse:10A\nFixture\nIP rating: IP20\nCooling method: fan cooling\nMax ambient temp: 45℃\nCase color: black\nLED\nLED: 600W white LED module\nColor Temp:8100K\nCRI:>80\nAverage lifespan: 20,000 hours\nControl\nDMX channel: 24CH\nDMX connector: 3Pin XLR input/output\nPower connector: PowerCon input\nControl mode: DMX/master-slave/auto/sound/RDM\nPan: 540º16bits, Tilt: 270º16bits\nPrecise and fast Pan/Tilt movements\nMotorized focus, frost, zoom, iris, split color\n3-phase motor for Pan/Tilt, automatic position correction\nStatic gobo wheel: 11gobos +open \nRotating gobo wheel: 7 gobos +open\nStatic color wheel:9colors +open,and split color effect\nSmooth CMY+CTO color mixing system\nPrism 1: 3-facet rotating ;prism 2: 3-facet rotating\nLCD touch display with 4 buttons\nWith RMD function and software upload via DMX cable\nColor effect\nColor: 9 colors+open, split color,CMY+CTO+CTB color mixing\nBeam angle: 4.9-33.9°\nDimming: 0-100% linear\nStrobe: 0-25Hz, random strobe and pulse strobe \nLux: 81,000Lux @ 10m & 4°(spot Ø 31mm), \nDimension\nProduct dimension: 36x25.2x71.2cm (LxWxH)\nN.W: 23KGS",
+    "category_id": 1
+  },
+  {
+    "id": 161,
+    "model": "SPL-LED-700W",
+    "description": "STUDIO PANEL LED 700W BICOLOR",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-700W/1758034350432_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-700W/1758034352873_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-700W/1758034355232_5.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-700W/content/documents/1758034325665_GEM%202X1%20BI.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-16T14:52:08.908022+00:00",
+    "updated_at": "2025-09-16T14:52:37.464442+00:00",
+    "technical_description": "Model GEM2X1 BI\nPower 350W\nLight Source\n700W LEDs：\n350W CW + 350W WW LED\nAngle 110°\nDimming Curve 4 Kinds\nInput Voltage AC100-240V,50/60Hz\nCCT 2700K-6500K\nCQS ≥96\nCRI ≥96\nTLCI ≥97\nDimming mode 0-100% bits dimming\nDimming Frequency 2-25KHz\nControl made DMX512/RDM\nDMX Channels 3/7CH\nBuilt-in Programs Yes\nStirrup\n28mm (1-1/8 in.) Spigot\nJunior Pin\nMaterial Aluminum alloy\nCooling Fan\nIP rating IP20\nDimensions 737*382.5*173mm\nN.W 11.8Kg",
+    "category_id": 19
+  },
+  {
+    "id": 3,
+    "model": "SPL-LED-700",
+    "description": "700W LED Profile",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-700BSWF/1756739952785_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-700BSWF/1756739954831_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-700BSWF/1756739955651_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-700/content/documents/1757340169122_SK-LED-700%20Profile%2020250115-20250908104744.pdf"
+    ],
+    "videos": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-videos/products/SPL-LED-700/videos/1756741860290_SPL-LED-M700W%20Frofile.mp4"
+    ],
+    "new": true,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power\nInput voltage: AC100-240V 50/60Hz\nPower consumption: 711W\nFuse:10A\nFixture\nIP rating: IP20\nCooling method: fan cooling\nMax ambient temp: 45℃\nCase color: black\nLED\nLED: 700W white LED module\nColor Temp:8000K\nCRI:>80\nAverage lifespan: 20,000 hours\nControl\nDMX channel: 35CH\nDMX connector: 3Pin XLR input/output\nPower connector: PowerCon input\nControl mode: DMX/master-slave/auto/sound/RDM\nPan: 540º16bits, Tilt: 270º16bits\nPrecise and fast Pan/Tilt movements\nMotorized focus, frost, zoom, iris, split color\n3-phase motor for Pan/Tilt, automatic position correction\nStatic gobo wheel: 7gobos plus open with gobo shaking function\nRotating gobo wheel: 7 gobos plus open with gobo shaking function\nStatic color wheel: 5colors plus open,and split color effect\nSmooth CMY+CTO color mixing system\nPrism 1: 6 rows of mirrors ;prism 2: 4-facet rotating\nAperture: 5-100% smooth adjustment\nFull color LCD touch display with 4 buttons\nWith RMD function and software upload via DMX cable\nCutting disc: a set of controllable light spot cutting angle system composed of\n4 corner cutting pieces, the entire cutting angle system can rotate by 90º, and\nthrough precise control of the cutting lens, can create any direction of triangle,\nrhombus, rectangle and other shapes of light spots\nColor effect\nColor: 5 colors+open, split color,CMY+CTO color mixing\nBeam angle: 4-36°\nDimming: 0-100% linear\nStrobe: 0-25Hz, random strobe and pulse strobe \nLux: 111,000Lux @ 5m & 4°(spot Ø 35mm), \nDimension\nProduct dimension: 36x25.2x71.2cm (LxWxH)\nN.W: 25KGS",
+    "category_id": 1
+  },
+  {
+    "id": 162,
+    "model": "SPL-LED-400W",
+    "description": "STUDIO FRESNELL 400W LED",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-400W/1758034567275_spl-led-400w%20png.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-400W/1758034569318_spl-led-400w_-1png.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-400W/1758034570931_spl-led-400w_-2png.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-400W/content/documents/1758034572686_SPL-LED-400W%20STUDIO%20LUX%20FRESNEL%20400.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-16T14:56:14.372548+00:00",
+    "updated_at": "2025-09-16T14:56:14.372548+00:00",
+    "technical_description": "-ELECTRICAL\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 400W\nFuse:3A\n-LIGHT SOURCE\nSource: 200W warm white+200W Cold White LED\nCRI: ≥96，CQS≥96\nCCT: 2700K-6500K\nAverage lifespan: 50,000 hours\n-COLOR SYSTEM\nColor : WW+ CW\n-ELECTRONICS\nLinear dimming: 0-100% Linear Dimmer\nStrobe: 2-25Hz\n-OPTICS\nBeam Angle:15°-55°\n-DYNAMIC EFFECTS\nSmooth dimming transitions\nVariable beam shaping\nColor temperature adjustment\n4 Types of dimming curves available\n-CONTROL\nDMX channel:3/7CH\nDMX connector: DMX 3-Pin XLR input/output\nPower connector: PowerCon input\nControl mode:DMX/Master-Slave/Auto/Sound\nLCD 1.77TFT display\n-PHYSICAL\nIP Rating:IP20\nHousing material: aluminum alloy\nWorking ambient temp.:-10℃ to 40℃ (-14℉ to 104℉)\nDimensions:481*324*444mm/18.94*12.76*17.48in\nWeight:10.2kg/22.5lb",
+    "category_id": 19
+  },
+  {
+    "id": 163,
+    "model": "SPL-CXD-400W",
+    "description": "ELIPSOIDAL 400W LED",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-CXD-400W/1758035437894_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-CXD-400W/1758035440162_4.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-CXD-400W/1758035442660_5.png"
+    ],
+    "contents": [],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-16T15:10:45.13279+00:00",
+    "updated_at": "2025-09-16T15:10:45.13279+00:00",
+    "technical_description": "1. T:ERR LAMP BODY TEMPCRATURE DISPLAY\n2. DMX ADDRESS: SELECT DMX ADDRESS CODE 001-512 WHEN THE CURSOR IS ON 001, YOU CAN PRESS THE AND DOWN KEYS TO SET THE ADDRESS CODE\n3. BUTTON DIMMING: WHEN THE CURSOR IS ON, THE LIGHT CAN BE DIMMED BY PRESSING THE UP AND BUTTONS\n4. KNOB DIMMING: WHEN THE CURSOR IS ON, THE KNOB CAN BE USED TO DIM THE LIGHT\n5. STROBE: 000 OFF; 001-100: 0-20 TIMES/SECOND, STROBE FROM SLOW TO FAST\n6. DMX HOLD: WHEN YOU CHOOSE TO TURN ON, THE LAST SCENE WILL BE KEPT AFTER A POWER OUTAGE; WHEN YOU CHOOSE TO TURN OFF, THE LIGHTS WILL TURN OFF DIRECTLY AFTER A POWER OUTAGE\n7. SCREEN SAVER TIME: FIVE OPTIONS: 00, 15, 30, 45 AND 60. 00 IS ALWAYS ON, AND THE CORRESPONDING SCREEN SAVER TIME UNIT OF 15, 30, 45 AND 60 IS SECONDS\n8. LANGUAGE: CHINESE AND ENGLISH SELECTION\n9. 4 DMX CHANNEL MODES",
+    "category_id": 19
+  },
+  {
+    "id": 35,
+    "model": "SPL-LED-1810RIP",
+    "description": "18*10 LED Wash light bar IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810RIP/1757344457130_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810RIP/1757344458710_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810RIP/1757344459965_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1810RIP/content/documents/1757344461177_SPL-LED-1810RIP%20User%20Manua%20(2)-20250908121200.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=CGbpsPi6_8A"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "12/110 DMX512 channels\nSound-Active/Auto-Play/DMX 512/Master-Slave\nLED display\nBuilt-in different inner program, can invoked directly. \nIP65 3-pins XLR\nPower supply: AC100V-240V 50/60Hz\nRated power: 133W\nLED: 18PCS 10W RGBWA-UV 6in1 LED\nDimmer: 0-100% linear 32bits\nIP rating: IP65\nHousing: black metal\nMax ambient Temp:-30- 45°C.",
+    "category_id": 2
+  },
+  {
+    "id": 164,
+    "model": "SPL-LED-R201",
+    "description": "LED FUTBOL CON ELEVACION",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-R201/1758035662473_JPF_4433.jpg"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-R201/content/documents/1758035664345_SPL-LED-R201.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-16T15:14:25.762621+00:00",
+    "updated_at": "2025-09-16T15:14:25.762621+00:00",
+    "technical_description": "1. Potencia de entrada: AC100-240V\n2. Frecuencia de alimentación: 50/60Hz\n3. Potencia; 120W\n4. LED: cuatro en uno cuentas de lámpara/luz auxiliar tres en uno\n5. Número de canales de control DMX: 18CH/67CH\n6. Modo de operación: DMX\n7. Altura de elevación: 6 metros\n8. RDM: Sí",
+    "category_id": 20
+  },
+  {
+    "id": 140,
+    "model": "SPL-LED-200W",
+    "description": "PAR LED COB 200W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-200W/1758137991980_SPL-LED-200W%204.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-200W/1758137993676_SPL-LED-200W%203.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-200W/content/documents/1757690481406_200W%20COB%20LED%20PAR%20LIGHT-20250912122017.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/1_VbuO0UnYw?si=QieWJ3YRzeOL_9Nj"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T15:21:23.913377+00:00",
+    "updated_at": "2025-09-17T19:39:55.823855+00:00",
+    "technical_description": "1. Flicker free\n2. Built-in programs\n3. LED Light Source: 1pcs 200 watt COB LED lamp(WW/CW)\n4. Lamp average life time: 50,000 hours\n5. DMX Channel: 5 channel\n6. Control Mode: Auto, Master/Slave, DMX512, software(connect to computer), sound\ncontrol\n7. Dimmer: 100% linearly adjustable\n8. Strobe: 0~25F.P.S\n9. Voltage: AC100-240V 50/60Hz\n10. Power: 200W\n11. Working Environment: indoor -20℃- 40℃\n12. IP Rate: IP20\n13. Size(cm): 30 * 22 * 32\n14. Weight(kg): 3",
+    "category_id": 4
+  },
+  {
+    "id": 13,
+    "model": "SPL-MHL-251G",
+    "description": "250W Beam Moving Head",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-251G/1755631491452_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-251G/1755631493487_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-251G/1755631494528_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-MHL-251G/content/documents/1757340344990_SPL-MHL-251G%20user%20manual.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=DmV1Tk9pi68"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power\nInput voltage: AC100-240V 50/60Hz\nPower consumption: 320W\nFuse：6.3A/250V，￠5*20\nFixture\nIP rating：IP20\nCooling method: fan cool\nMax ambient temp: 45℃\nCase color: black\nLamp\nLamp: 250W lamp\nColor Temp: 8000K\nAverage lifespan: 2,000 hours\nControl\nDMX channel: 19CH\nDMX connector: 3Pin XLR input/output\nPower connector: PowerCon input\nControl mode: DMX/master-slave/auto/sound\nPan: 540º16bits, Tilt: 270º16bits\nPrecise and fast Pan/Tilt movements\nMotorized focus, frost, split color and rainbow effect\n3-phase motor for Pan/Tilt, automatic position correction\nStatic gobo wheel: 13gobos plus open(including 4 mirror gobos) \nStatic color wheel: 14colors plus open\n1pc rainbow effect wheel\nPrism 1: 8-facet +16-facet rotating, prism 2: 16-facet rotating\nPrism overlay and full color LCD display with 5 buttons\nWith RMD function and software upload via DMX cable\nColor effect\nColor: 13 colors+open, split color, rainbow\nBeam angle: 2°\nDimming: 0-100% \nStrobe: 0-25Hz\nLux : 215,000Lux @ 10m\nDimension\nProduct dimension: 34x25.5x51.5cm (LxWxH)\nN.W: 14.8KG",
+    "category_id": 1
+  },
+  {
+    "id": 165,
+    "model": "SPL-LED-P6",
+    "description": "LUCES LED RETRO*6",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-P6/1758036561919_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-P6/1758036564255_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-P6/content/documents/1758036566575_manual%20p6.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-16T15:29:32.579803+00:00",
+    "updated_at": "2025-09-16T15:29:32.579803+00:00",
+    "technical_description": "Voltage: AC 90V-240V\nFrequency: 50Hz/60Hz\nPower: 600W\nMain light: 6*60W\nAuxiliary light: 1:168*0.2W (RGB)\nAuxiliary light 2:864*0.2W (RGB)\nControl: DMX 512, Auto, Voice control",
+    "category_id": 20
+  },
+  {
+    "id": 131,
+    "model": "SPL-LED-M560S",
+    "description": "BARRA LED MOVIL 5*60",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M560S/1758135595363_5.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M560S/1758135597797_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-M560S/content/documents/1757358686871_SPL-LED-M560S%2020250305-20250908161040.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-08T19:11:30.001436+00:00",
+    "updated_at": "2025-09-17T19:00:00.547821+00:00",
+    "technical_description": "Input voltage：AC100-240V 50/60Hz\nPower consumption：600W\nLight source：5pcs*120W RGBL LED\nOuter ring LED：120*0.3W 5050 RGB LED\nThe outer ring adopts：24pcs Lighting LED，Can be independently controlled\nZoom angle：3~26° Dimming：0-100% smooth dimming\nStrobe：1S/25HZ\nTilt：59°(16bit°)\nPan：221°(16bit°)\nControl panel: LCD screen\nControl mode: DMX/Auto/Sound\nChannel mode: 41CH/71CH/31CH/51CH/79CH\nSoftware upgrading: DMX Connect upgrade software\nDMX connections：3Pin XLR Input&Output\nPower connector: Input/output\nIP：IP20\nMaximum operating environment temperature：45° Product size：\nLength: 1011 mm (39.8\")\nWidth: 184 mm (7.24\")\nHeight: 355 mm (13.98\")\nN.W: 23 kg (50.7 lbs)",
+    "category_id": 2
+  },
+  {
+    "id": 146,
+    "model": "SPL-LED-450 IP",
+    "description": "PAR LED 4*50W BICOLOR IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-450%20IP/1758138427198_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-450%20IP/1758138429721_2.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-450%20IP/content/documents/1757699834819_SPL-LED-P450IP%20-20250912145308.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/J9940J_8CXw?si=tZn1ebuT38zD1Tni"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T17:57:17.015371+00:00",
+    "updated_at": "2025-09-17T19:47:11.329291+00:00",
+    "technical_description": "4/8 DMX512 channels\nInput voltage: AC100-240V 50/60Hz\nLight source: 4*50W white LED, 2pcs warm white, 2pcs cold white\nControl mode: Auto-Play/DMX 512/Master-Slave/RDM\nLED display\nBuilt-in different inner program, can invoked directly.\nWaterproof 3-pins XLR input/output\nWaterproof powercon input/output\nRated power: 170W\nStrobe: 1-25Hz\nDimmer: 0-100% linear dimmer\nBeam Angle: 25° \nProtection Rate: IP65\nHousing: metal in black\nMax ambient Temp: 45°C. \nHousing max ambient Temp: 65°C. \nDaisy chain max 6pcs for AC110V,12pcs for AC220V",
+    "category_id": 4
+  },
+  {
+    "id": 18,
+    "model": "SPL-LED-60S",
+    "description": "60W LED spot moving head",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-60S/1756925286183_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-60S/1756925287746_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-60S/content/documents/1757337820246_SPL-LED-60S%20User%20Manual.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Specification:\nPower\nInput voltage: AC100-240V 50/60Hz\nPower consumption: 80W\nFixture\nIP rating: IP20\nCooling method: fan cool\nMax ambient temp: 45℃\nCase color: black\nLamp\nLamp: 60W white LED+12pcs 0.2W SMD5050 RGB Tri LED\nColor Temp: 8000K\nAverage lifespan: 50,000 hours\nControl\nDMX channel: 9/11CH\nDMX connector: 3Pin XLR input/output\nPower connector: IEC input\nControl mode: DMX/master-slave/auto/sound\nPan: 540º, Tilt: 270º\nStatic gobo wheel: 7gobos plus open\nStatic color wheel: 7colors plus open\nLED display with 4 buttons\nLED rings with wash, strobe, chasing effects\nColor effect\nColor: 7 colors+open, split color\nBeam angle: 12°\nDimming: 0-100% linear\nStrobe: 0-25Hz\nDimension\nProduct dimension: 20x16.5x28.5cm (LxWxH)\nN.W: 2.5KG",
+    "category_id": 1
+  },
+  {
+    "id": 10,
+    "model": "SPL-MHL-380IP",
+    "description": "380W beam moving head light IP",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-380IP/1755630531879_5.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-380IP/1755630533811_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-380IP/1755630534647_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-380IP/1755630536062_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-MHL-380IP/content/documents/1757341412334_SPL-MHL-380IP.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=5rZ-uidFbL4"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 500W\nFixture\nIP rating: IP65\nCooling method: air cooling\nMaximum ambient temperature: 45℃\nCase color: black\nLamp\nlamp: 380W discharge lamp\nColor temperature: 8000K\nAverage lamp lifespan: 2000 hours\nControl system\nDMX channels: 19CH\nDMX connector: 3 Pin XLR input and output(hand in hand)\nPower connector: PowerCon input and output(hand in hand)\nControl mode: master-slave/auto/sound/DMX\nPan: 540º, 16 bits scanning\nTilt: 270º, 16 bits scanning\n1 static color wheel: 14 static color gobos+open,with color reposition\n1 static gobo wheel: 12 static gobos+open+5 mirror gobos,with gobo \n reposition and gobo shaking\n1 rainbow effect wheel\nPrism 1:12 facet rotating prism\nPrism 2: 8+16 facet rotating prism\n2 prism overlay, motorized focus and frost\nAccurate and fast XY axis rotation \nElectronic error correction function\nFull color TFT LCD color display with 5 buttons\nAuto high temperature protection for lamp\nColor effect\nColor: 14 colors+open, split color, rainbow effect\nBeam angle: 2º\nStrobe: 1-25Hz\nLinear dimming: 0-100%\nIllumination: 200000LUX at 15m\nDimension\nProduct dimension: 39x 32x61cm (LxWxH)\nNet weight: 20.2KG",
+    "category_id": 1
+  },
+  {
+    "id": 166,
+    "model": "SPL-LED-P7",
+    "description": "LUCES LED RETRO*7",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-P7/1758036841218_5.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-P7/1758036844025_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-P7/1758036846686_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-P7/content/documents/1758036849241_P7.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-16T15:34:14.722564+00:00",
+    "updated_at": "2025-09-16T15:34:14.722564+00:00",
+    "technical_description": "Voltage: AC 90V-240V\nFrequency: 50Hz/60Hz\nPower: 700W\nMain light: 7*60W\nAuxiliary light: 1:168*0.2W (RGB)\nAuxiliary light 2:1008*0.2W (RGB)\nControl: DMX 512, Auto, Voice control",
+    "category_id": 20
+  },
+  {
+    "id": 129,
+    "model": "SPL-LED-M740",
+    "description": "WASH BEE EYES 7*40W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M740/1758135428076_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M740/1758135430523_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-M740/content/documents/1757357632794_SPL-LED-M740EYE%20(1)(1)-20250908155317.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-08T18:53:54.848071+00:00",
+    "updated_at": "2025-09-17T18:57:12.323838+00:00",
+    "technical_description": "Light Sources: 7x 40W 4IN1 RGBW LED\nBeam Angle: 3.5°~ 45° Power Consumption: 280W\nPower Voltage: AC 100-240V, 50/60Hz\nDMX Channel: 21/24/32/60 Channel\nControl Modes: DMX512/Mater-Slave/Auto Run/Music\nPan/Tilt: 540°/ 270° Pan/Tilt Resolution: 8/16 bit\nDisplay: LCD Display\nData In/Out socket: 3-pin XLR sockets\nPower Socket: Power con in/out\nProtection Rating: IP20",
+    "category_id": 2
+  },
+  {
+    "id": 4,
+    "model": "SPL-MHL-551 IP",
+    "description": "420W beam moving head light IP",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-551%20IP/1755630295901_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-551%20IP/1755630298084_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-551%20IP/1755630299640_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-551%20IP/1755630300643_5.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-MHL-551%20IP/content/documents/1757340755144_SPL-MHL-551IP%20%20BEAM%20551.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=uF_WQk1x_sA"
+    ],
+    "new": true,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power\nInput power: AC100-240V 50/60Hz\nPower: 580W\nFixture\nIP rating: IP65\nCooling method: fan cooling\nMaximum ambient temperature: 45℃\nCase color: die-cast aluminium black\nLamp\nlamp: 420W Ushio lamp Japan\nColor temperature: 8000K\nAverage lamp lifespan: 2000 hours\nControl system\nDMX channels: 16/20CH\nDMX connector: IP65 3 Pin XLR input and output with 1.2m 3x2.5mm² cable\nPower connector: IP65 PowerCon input and output with 1.2m 3x0.5mm² cable\nControl mode: master-slave/auto/DMX/RDM\nPan: 540º, 16 bits scanning\nTilt: 270º, 16 bits scanning\n1 static color wheel: 14 static color gobos+open,with color reposition\n1 static gobo wheel: 17 static gobos+open(5 mirror gobos),with gobo \n reposition and shaking\n1 rainbow effect wheel\nPrism 1: 8 facet rotating prism\nPrism 2: 16 facet rotating prism\n2 prism overlay, motorized focus and frost\n200mm diameter optical lens\nAccurate and fast XY axis rotation \nElectronic error correction function\nFull color TFT LCD color display with 5 buttons\nAuto high temperature protection for lamp\nColor effect\nColor: 14 colors+open, split color, rainbow effect\nBeam angle: 1.4º\nStrobe: 1-25Hz\nLinear dimming: 0-100%\nIllumination: 420000LUX at 15m\nDimension\nProduct dimension:44x27.5x73cm (LxWxH)\nNet weight: 30.5KG",
+    "category_id": 1
+  },
+  {
+    "id": 137,
+    "model": "SPL-LED-960II",
+    "description": "STROBOS 960 LED II",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-960II/1758137736854_Capture00091.jpg"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-960II/content/documents/1757360771261_SPL-LED-960B%20II%20USER%20MANUAL%20.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/Fyivr4uGoP0?si=basa2ay9wDTS1so2"
+    ],
+    "new": false,
+    "created_at": "2025-09-08T19:46:12.836011+00:00",
+    "updated_at": "2025-09-17T19:35:49.883949+00:00",
+    "technical_description": "Voltage：AC100 ~240V 50/60Hz，\nPower consumption: 270W\nLED: 768pcs SMD5050 RGB 3in1 LED +112pcs White SMD5050 LED\nControl mode ：Master-Slave/Auto/DMX512/Sound/ RDM\nDMX channel：CH04/CH15/CH152\nDimming: 32bit, 0~100% linear dimming\nFeatures:48+ 8-segment horse racing + Wash + flashing\nWorking Temp.:-30°~ 50° Strobe: 1~25-Hz；\nCase: metal, black\nConnection: DMX input/output,Powercon input/output\nIP rating: IP20",
+    "category_id": 3
+  },
+  {
+    "id": 152,
+    "model": "SPL-LED-616F",
+    "description": "MINI BRUT 4*100W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-616F/1758138676418_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-616F/1758138678974_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-616F/1758138682051_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-616F/content/documents/1757702245534_SPL-LED-616F%20User%20Manual-20250912153635.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/PHGPwOyD0kY?si=OqxLpYLr1zextkby"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T18:37:27.641246+00:00",
+    "updated_at": "2025-09-17T19:51:24.778443+00:00",
+    "technical_description": "Voltage：100-240V，50/60HZ；\nPower Consumption：310W；\nLED: 4*100W LED WW/CW + 96*5050 LED\nOperation mode: master-slave/DMX512/Auto/Sound\nDMX Channel: 2 options (CH40/CH41, refer to the channel table)\nDimming: 0-100% linear dimming\nFeature:Strobe, effect\nWorking temp.: -30º~~45º\nStrobe: 1-23Hz\nAppearance: Metal, Black\nConnection method: DMX512 input and output / power input and output.\nIP rating: IP20",
+    "category_id": 4
+  },
+  {
+    "id": 133,
+    "model": "SPL-LED-3240S IP",
+    "description": "BAÑADOR LED 32*40W IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-3240S%20IP/1758135716773_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-3240S%20IP/1758135720226_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-3240S%20IP/content/documents/1757360039690_SPL-LED-T3240S%20IP%20COLOR%20SPECTRUM%20STROBE%20T3240.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/VpzLbhEn8iA?si=vWDYiY7OntiL1hcy"
+    ],
+    "new": false,
+    "created_at": "2025-09-08T19:34:02.406222+00:00",
+    "updated_at": "2025-09-17T19:02:03.692351+00:00",
+    "technical_description": "-ELECTRICAL\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 1400W\n-LIGHT SOURCE\nSource: LED 1: 32pcs 40W RGBW LED\nLED 2: 144pcs 5W White LED\nAverage lifespan: 50,000 hours\n-COLOR SYSTEM\nColor : RGBW+White\n-ELECTRONICS\nLinear dimmer: 0-100%\nLinear Dimmer Strobe: 1-25HZ\n-OPTICS\nBeam: Angle:10°\n-DYNAMICS EFFECTS\nStrobe+wash+blinder+chasing effect\nVarious macro effects controlled by DMX or menu\n-CONTROL\nDMX channel: 12/13CH\nDMX connector:IP65 3-pinXLRinput/output with cable\nPower connector:IP65 Tru1input/output with cable\nControl mode:DMX/Master-Slave/Auto/Sound\nLCD display with 4 buttons\n-PHYSICAL\nIP Rating:IP65\nHousing color: black\nWorking ambient temp.:-10℃ to 40℃ (-14℉ to 104℉)\nDimensions:484*137*419mm/19.1*5.4*16.5in\nWeight:17.5kg/38.6lb",
+    "category_id": 2
+  },
+  {
+    "id": 138,
+    "model": "SPL-LED-720IP",
+    "description": "BARRA STROBO 720 LED IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-720IP/1758137800155_Mesa%20de%20trabajo%2011.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-720IP/1758137801464_Mesa%20de%20trabajo%2012.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-720IP/content/documents/1757360970812_720IP.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-08T19:49:32.598408+00:00",
+    "updated_at": "2025-09-17T19:36:43.251219+00:00",
+    "technical_description": "Voltage: AC100~240V 50/60HZ\nPower consumption: 250W\nLight Source: 480pcs RGB SMD 5050 Led lamp + 240pcs 0.5w white 5730 Led lamp\nColor: RGB + White\nLamp average life time: 50,000 hours\nControl: DMX512, automatic, master-slave, sound, with RDM function\nDimmer: 32 bit 0-100% linearly adjustable\nStrobe: 1~30HZ\nFeature: running + wash + strobe\nConnection: DMX512 input and output / power input and output\nDMX Channel: 4 / 16 / 168CHs\nTemperature: -30℃ to 50℃\nMaterial: Aluminum + glass\nIP rating: IP65\nProduct size: 98*8.5*11.6cm\nProduct net weight: 4.5kg",
+    "category_id": 3
+  },
+  {
+    "id": 148,
+    "model": "SPL-LED-1210",
+    "description": "PAR LED 12*10W (RGBW/UV)",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1210/1758138488412_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1210/1758138491989_2.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1210/content/documents/1757700652728_1210%20-20250912150934.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-12T18:10:54.289597+00:00",
+    "updated_at": "2025-09-17T19:48:16.449899+00:00",
+    "technical_description": "5/9 DMX512 channels\nSound-Active/Auto-Play/DMX 512/Master-Slave\nLED display\n3-pins XLR input/output\nPower supply: AC100V-240V 50/60Hz\nLED: 12pcs RGBW+UV LED\nProtection Rate: IP20",
+    "category_id": 4
+  },
+  {
+    "id": 139,
+    "model": "SPL-LED-500IP",
+    "description": "BARRA STROBO 500 IP",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-500IP/1758137834101_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-500IP/1758137836164_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-500IP/1758137838125_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-500IP/content/documents/1757690155099_SPL-LED-500IP%20User%20Manua-20250912121348.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/ESvUYZ0SRq8?si=NC4l_2jJPRD_WVYf"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T15:15:58.124751+00:00",
+    "updated_at": "2025-09-17T19:38:54.691177+00:00",
+    "technical_description": "14/96 DMX512 channels\nSound-Active/Auto-Play/DMX 512/Master-Slave\nEffect: strobe, wash\nIP65 3-pin XLR\nPower supply: AC100V-240V 50/60Hz\nRated power: 500W\nLED: 256*1W SMD3535 white LED 7000K，768*0.5W SMD5050RGB Tri LED\nDimmer: 0-100% linear 32bits\nIP rating: IP65\nHousing: black metal\nMax ambient Temp:-30- 45°C.",
+    "category_id": 3
+  },
+  {
+    "id": 20,
+    "model": "SPL-LED-M1940FIP",
+    "description": "LED wash moving head Zoom+Bee eye 19*40w IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M1940FIP/1757704976371_Mesa%20de%20trabajo%204.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M1940FIP/1757704979090_Mesa%20de%20trabajo%201.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-M1940FIP/content/documents/1757704981399_M1940%20IP-20250912162142.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=RFt90EgxTTk"
+    ],
+    "new": true,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Input voltage：AC100-240V 50/60Hz\nPower consumptionn：760W\nLED type：54*0.2W 5050 RGB\nLED QTY：19pc\nAverage lifespan：50000 hours\nBeam angle：4°- 32°\nElectronic Dimming：0-100%\nStrobe：1S/25\nFocus：Yes\nRotate：Yes\nPan：540° 16bits\nTilt：270° 16bits\nDMX channel：28CH/30CH/42CH/85CH/99CH/104CH/106CH\nControl mode：DMX /RDM\nDisplay mode：LED\nIP rating：IP65\nMax ambient temp：45°\nProduct dimension：435*333*500 mm\nN.W：21.4kG",
+    "category_id": 2
+  },
+  {
+    "id": 134,
+    "model": "SPL-LED-3000IP",
+    "description": "STROBO 3000 MOVIL IP65 ",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-3000IP/1758135911726_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-3000IP/1758135914460_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-3000IP/content/documents/1757360326961_PULSARIS%203000IP%20USER%20MANUAL.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/xs0IbMVoNlg?si=cWeT1rWvtbZoNIZm"
+    ],
+    "new": false,
+    "created_at": "2025-09-08T19:38:49.12371+00:00",
+    "updated_at": "2025-09-17T19:05:17.904951+00:00",
+    "technical_description": "-ELECTRICAL\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 1000W\n-LIGHT SOURCE\nSource: LED 1: 144pcs 5W white LED, 7000K\nLED 2: 576pcs 0.5W RGB LED\nverage lifespan: 50,000 hours\n-COLOR SYSTEM\nColor : White+RGB\n-ELECTRONICS\nLinear dimmer: 0-100%\nLinear Dimmer Strobe: 1-25HZ\n-OPTICS\nBeam: Angle:120\n-DYNAMICS EFFECTS\n8 sections control for white LED, 16 sections for RGB\nLED Strobe+wash+blinder+chasing effect\nVarious built-in effects controlled by DMX or menu\n-CONTROL\nDMX channel: 8/14/18/61CH\nDMX connector:5-Pin XLR input and output (or 3-Pin)\nPower connector:TRU1 input and output (or IP65 with\ncable)\nControl mode:DMX/Master-Slave/Auto\nLCD display with 4 buttons\nTilt:180°, 16bits\n-PHYSICAL\nIP Rating:IP65\nHousing color: black\nWorking ambient temp.:-10℃ to 40℃ (-14℉ to 104℉)\nDimensions:515x196x270mm/20.3*7.7*10.63in\nWeight:13.7kg/30.2lb",
+    "category_id": 3
+  },
+  {
+    "id": 132,
+    "model": "SPL-LED-4410IP",
+    "description": "BAÑADOR LED 44*10W IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-4410IP/1758135668362_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-4410IP/1758135671148_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-4410IP/content/documents/1757358992129_SPL-LED-4410-B%20IP%20User%20Manual.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-08T19:16:34.761034+00:00",
+    "updated_at": "2025-09-17T19:01:13.043828+00:00",
+    "technical_description": "Light Source:\nAC90-240V, 50/60HZ\n450W power consumption\n44 x high-power RGBW 4IN1 LEDs (10W, 15W optional)\n50,000 hours expected lifetime\n25°, 35°, 45° lens beam angle optional\nControl:\n0-100% 32bit linear dimming\n1-20 times/second strobe\n4/10 DMX channels\n4 built in auto mode\n6 Dimmer curve",
+    "category_id": 2
+  },
+  {
+    "id": 142,
+    "model": "SPL-COB-200IP",
+    "description": "COB 200W RGBW IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-COB-200IP/1758138118716_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-COB-200IP/1758138121488_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-COB-200IP/1758138124465_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-COB-200IP/1758138128201_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-COB-200IP/content/documents/1757691019533_SPL-LED-200W%20COB%20IP%20HUEWAVE%20RGBW%20200%20IP.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/aTaaKwahx8Q?si=ktNKrL9Fe0h9lFUx"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T15:30:21.745415+00:00",
+    "updated_at": "2025-09-17T19:42:10.955283+00:00",
+    "technical_description": "-ELECTRICAL\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 250W\nProtection for overheating/over current/over voltage\n-LIGHT SOURCE\nSource: 1pcs 200W COB RGBW 4in1 LED\nAverage lifespan: 50,000 hours\n-COLOR SYSTEM \nColor : RGBW\n-ELECTRONICS\nLinear dimmer: 0-100% Linear Dimmer\nStrobe: 1-30Hz\n-OPTICS\nBeam Angle:67°\n-DYNAMIC EFFECTS\nRGBW color mixing\nStrobe\nMacro effects\nDimming curve and speed adjustable\n-CONTROL\nDMX channel:4/7/9/10CH\nDMX connector: DMX 5-Pin XLR input/output\nPower connector:Tru1 input/output\nControl mode:DMX/Master-Slave/Auto/Sound\nLED display\n-PHYSICAL\nIP Rating:IP65\nHousing color: black\nHousing material: aluminium\nWorking ambient temp.:-10℃ to 40℃ (-14℉ to 104℉)\nDimensions:174*134*248mm/6.9*5.3*9.8in\nWeight:3.5kg/7.8lb",
+    "category_id": 4
+  },
+  {
+    "id": 85,
+    "model": "SPL-RGB-508",
+    "description": "Fat beam laser bar",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-508/1755619779839_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-508/1755619782268_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-508/1755619783704_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-508/content/documents/1757343484743_SPL-RGB-508B%20User%20Manua-20250908115704.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Red laser diode: 100mW/638nm+50mW/515nm+150mW/450nm ; average lifetime is over 2000 hours, low power consumption.\nDMX channel：9CH/19-1CH/19-2CH/32CH                     \nControl mode ：Master/Slave, Auto, DMX512, Sound\nPan: 240º, Tilt: 90º\nElectrical strobe: 1~23Hz；\nInput voltage：AC100 ~240V  50/60Hz， \nPower consumption: 120W\n3pin DMX input/output, Power Con input/output\nAmbient. Temp:-10°-- 40°",
+    "category_id": 5
+  },
+  {
+    "id": 16,
+    "model": "SPL-MHL-250G",
+    "description": "250W Beam Moving Head",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-250G/1755625382306_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-250G/1755625384491_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-250G/1755625385522_4.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-250G/1755625387137_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-MHL-250G/content/documents/1757339845594_SPL%20MHL%20250G%20MINI.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=sP-KovHGIzI"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 310W\nFuse: 6.3A/250V\nFixture\nIP rating: IP20\nCooling method: air cooling\nMaximum ambient temperature: 45℃\nCase color: black\nLamp\nlamp: 230W\nLED:27pcs*0.24W RGB 5050 LED\nColor temperature: 8000K\nAverage lamp lifespan: 2000 hours\nControl system\nDMX channels: 16CH\nDMX connector: 3 Pin XLR input and output\nPower connector: PowerCon input\nControl mode: master-slave/auto/sound/DMX/RDM\nPan: 630º, 16 bits scanning\nTilt: 270º, 16 bits scanning\n1 static color wheel: 12 static colors +open\n1 static gobo wheel: 10 static gobos+open+3 mirror gobos\n1 rainbow effect wheel\nPrism 1: 8-facet rotating prism\nPrism 2: 8+16 facet rotating prism\nMotorized focus and frost\nAccurate and fast XY axis rotation \nElectronic error correction function\nLCD color display with 5 buttons\nWith RDM, software can be updated through the USB interface\nColor effect\nColor: 12olors+open, split color, rainbow effect\nBeam angle: 2º\nStrobe: 1-25Hz\nLinear dimming: 0-100%\nIllumination: 85000LUX at 15m distance\nDimension\nProduct size：29x22x47.5cm(LxWxH)\nNet weight: 10.7KG",
+    "category_id": 1
+  },
+  {
+    "id": 88,
+    "model": "SPL-RGBW-506A",
+    "description": "Fat beam red laser bar",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGBW-506A/1755619376138_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGBW-506A/1755619377665_2.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGBW-506A/content/documents/1757342422144_SPL-RGBW-506A%20-20250908113920.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "1. Input voltage:AC100V~240V 50/60Hz\n2. Fuse: 250VAC 2A\n3. Power consumption:80W\n4. Control mode: auto/sound/DMX512/Master-slave\n5. DMX channels: 10/23CH\n6. Scanning：step motor\n7. LED: 7pcs 3W RGBW LED with average lifespan 50000hours and color temperature, beamangle 7º \n8. Laser diode:8pcs 500mW 638nm red laser diode, with separate diode control\n9. TILT: 180º 10. Working temperature:10℃~40℃\n11. 0-100% dimming\n12. 0-25Hz strobe\n13. Product dimension: 1000*84*173mm, net weight: 6.8KG",
+    "category_id": 5
+  },
+  {
+    "id": 81,
+    "model": "SPL-RGB-105",
+    "description": "5W RGB full color animation laser light",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-110/105/1755618544349_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-110/105/1755618546259_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-105/content/documents/1757342700991_5W%20RGB%20mobile%20app%20laser%20user%20manual%2020240612(1)-20250908114413.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Input voltage: AC100-240V, 50/60Hz\nFuse: BGDP ￠5x20mm   250VAC  2A\nTotal power:40W\nLight source: 5W\nControl mode: Auto/Sound/DMX512/Master-slave/Bluetooth(mobile phone/iPad)\nChannels：17CH/21CH\nScanning system: 20Kpps Scanner\nMaximum Angle: a maximum of 40\n51 internal patterns for show \nSurface temp: Tb=45ºC ( this data testing when the environment temp is 30ºC)\nWorking temp: 10ºC--65ºC\nModulation: Anglog",
+    "category_id": 5
+  },
+  {
+    "id": 153,
+    "model": "SPL-LED-4100 IP ",
+    "description": "MINI BRUT 4*100W IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-4100%20IP%20/1758138807957_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-4100%20IP%20/1758138809681_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-4100%20IP%20/1758138812116_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-4100%20IP%20/content/documents/1757702415104_SPL-LED-4100IP%20SOLSTICE%20QUAD%204100IP.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-12T18:40:17.292877+00:00",
+    "updated_at": "2025-09-17T19:53:34.886287+00:00",
+    "technical_description": "-ELECTRICAL\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 420W\n-LIGHT SOURCE\nSource: :4X100W COB WW/CW LED\nAverage lifespan: 50,000 hours\n-COLOR SYSTEM\nColor : CW+WW\n-ELECTRONICS\nLinear dimming: 0-100% Linear Dimmer\nStrobe: 1-25Hz\n-OPTICS\nBeam angle:45° With frosted glass diffuser panel:60\n-DYNAMIC EFFECTS\nBuilt-in programs and strobe effects with adjustable speed\nOrientation of all the four eyes adjustable individually\n-CONTROL\nDMX channel:2/8/8/14ch\nDMX connector: 3-Pin XLR input /output with\nintegrated cable or 5-Pin input/output\nPower connector: Ip65 input/output with\nintegrated cable or Tru1 input/output\nControl mode:DMX/Master-Slave/Auto/Sound\n-PHYSICAL\nIP Rating:IP65\nHousing color: black\nWorking ambient temp.:-10℃ to 40℃ (-14℉ to 104℉)\nDimensions:403*395*321mm/15.9*15.6*12.6in\nWeight:13kg/28.7lb",
+    "category_id": 4
+  },
+  {
+    "id": 30,
+    "model": "SPL-LED-1260",
+    "description": "12*60W LED moving bar zoom",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1260/1757344143251_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1260/1757344144858_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1260/content/documents/1757344146040_VIVID%20TREAD%201260YZ%20USER%20MANUAL.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "-ELECTRICAL\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 580W\nFuse: 8A\n-LIGHT SOURCE\nSource: 12 *6 0W RGBW LED\nAverage lifespan: 50,000 hours\n-COLOR SYSTEM\nColor : RGBW\n-ELECTRONIC\nLinear dimming: 0-100% Linear\nDimmer Strobe: 1-25Hz\n-OPTICS\nBeam Angle:4.5°-35.5°\n-DYNAMIC EFFECTS\nPixel mapping and color mixing\nMotorized zoom 4.5°-35.5°\nVarious macro effects\nCONTROL\nDMX channel:18/56CH\nDMX connector: DMX 3-Pin XLR input/output (or 5-Pin)\nPower connector: PowerCon input/output\nTilt: 220°\nControl mode:DMX/Master-Slave/Auto/Sound\n1.8-inch color LCD display, 180-degree rotatable\n-PHYSICAL\nIP Rating:IP20\nHousing color: black\nWorking ambient temp.:-10℃ to 40℃ (-14℉ to 104℉)\nDimensions:1080*130*315mm/42.5*5.1*12.4in\nWeight:22kg/48.5lb",
+    "category_id": 2
+  },
+  {
+    "id": 15,
+    "model": "SPL-MHL-250",
+    "description": "250W beam moving head",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-250/1755625871779_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-250/1755625873786_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-250/1755625875628_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-250/1755625877228_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-MHL-250/content/documents/1757340005679_SPL-MHL-250B%20II%20user%20manual.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=wfT18C9yGgw"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power\nInput power: AC100-240V\nPower frequency: 50/60Hz\nPower: 310W\nFuse: 6.3A/250V\nFixture\nIP rating: IP20\nCooling method: air cooling\nMaximum ambient temperature: 45℃\nCase color: black\nLamp\nlamp: 230W\nColor temperature: 8000K\nAverage lamp lifespan: 2000 hours\nControl system\nDMX channels: 16CH\nDMX connector: 3 Pin XLR input and output\nPower connector: PowerCon input\nControl mode: master-slave/auto/sound/DMX/RDM\nPan: 630º, 16 bits scanning\nTilt: 270º, 16 bits scanning\n1 static color wheel: 12 static colors +open\n1 static gobo wheel: 10 static gobos+open+3 mirror gobos\n1 rainbow effect wheel\nPrism 1: 8-facet rotating prism\nPrism 2: 8+16 facet rotating prism\nMotorized focus and frost\nAccurate and fast XY axis rotation \nElectronic error correction function\nLCD color display with 5 buttons\nWith RDM, software can be updated through the USB interface\nColor effect\nColor: 12olors+open, split color, rainbow effect\nBeam angle: 2º\nStrobe: 1-25Hz\nLinear dimming: 0-100%\nIllumination: 8500LUX at 15m distance\nDimension\nProduct size：29x22x47.5cm(LxWxH)\nNet weight: 10.7KG",
+    "category_id": 1
+  },
+  {
+    "id": 125,
+    "model": "SPL-LED-120S",
+    "description": "BEAM 120W C/ARO LED",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-120S/1757703400447_JPF_7845.jpg",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-120S/1757703402821_JPF_7847.jpg",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-120S/1757703404049_JPF_7843.jpg"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-120S/content/documents/1757341590796_spl%20led%20120s.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-08T14:26:33.347601+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Voltage: AC100-240V 50/60HZ\nLight source : 120W Super brightness LED,12 RGB 3 in 1 SMD LED\nPower: 150W\nOperating mode: DMX512, master-slave, automatic, sound\nControl channel: 14 channels\nDimming: 0-100%LED Linear dimming\nStrobe: High-speed electronic strobe\nHorizontal and vertical: 540°、270°；16bit\nFixed gobo disc: A fixed pattern\nseven-color film: can make colorful prism effect\nBeam angle: 2°\nDisplay board: LED display， Forward and reverse display\nlight Size: 20*17*34CM\nCarton size:24*24*34CM(Single size)\nNet weight：4.2KG\ngross weight:5KG",
+    "category_id": 1
+  },
+  {
+    "id": 144,
+    "model": "SPL-LED-1815 IP",
+    "description": "PAR LED 18*15W  IP65 (RGBWA/UV)",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1815%20IP/1758138302865_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1815%20IP/1758138304169_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1815%20IP/content/documents/1757698551812_SPL-LED-1815IP%2020241203-20250912143251.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/-0E4bCJp2pc?si=1oP4WMwQgod9eYXX"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T17:35:54.906612+00:00",
+    "updated_at": "2025-09-17T19:45:06.497563+00:00",
+    "technical_description": "6/7/8/10 DMX512 channels\nSound-Active/Auto-Play/DMX 512/Master-Slave\nLED display\nBuilt-in different inner program, can invoked directly. \n5-pin XLR (3-pins for option)\nPower supply: AC100V-240V 50/60Hz\nRated power: 200W\nLED: 18PCS 15W RGBWA-UV 6in1 LED\nBeam angle: 25˚\nDimmer: 0-100% linear 32bits\nIP rating: IP65\nHousing: black\nMax ambient Temp:-10- 45°C. \nProduct size: 287x248x222mm\nN.W: 4.3Kg",
+    "category_id": 4
+  },
+  {
+    "id": 154,
+    "model": "SPL-LED-2100 IP ",
+    "description": "MINI BRUT 2*100 IP65",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-2100%20IP%20/1758138771981_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-2100%20IP%20/1758138773808_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-2100%20IP%20/1758138775970_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-2100%20IP%20/content/documents/1757702498023_User%20Manual%20of%202X100W%20COB%20Waterproof%20LED%20BLINDER%20LIGHT(1)-20250912154048.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-12T18:41:40.322362+00:00",
+    "updated_at": "2025-09-17T19:52:58.85322+00:00",
+    "technical_description": "1. Flicker free\n2. Built-in programs\n3. LED Light Source: 2pcs 100 watt COB 2IN1 LEDs(3200K-6500K), 72pcs 0.5w SMD5050 RGB LEDs\n4. Feature: wash effect\n5. Lamp average life time: 50,000 hours\n6. DMX Channel: 8, 11, 28 channel\n7. Control Mode: Auto, Master/Slave, DMX512, sound, with RDM function\n8. Dimmer: 100% linearly adjustable\n9. Strobe: 1-30Hz\n10. Voltage: AC100-240V 50/60Hz\n11. Power: 250W\n12. Working Environment: -20℃- 40℃\n13. IP Rate: IP65\n14. Size(cm): 36.5* 20 * 29.5\n15. Weight(kg): 6.9",
+    "category_id": 4
+  },
+  {
+    "id": 31,
+    "model": "SPL-LED-1260S",
+    "description": "12*60 LED Moving Zoom Bar light",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1260S/1757344708191_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1260S/1757344709662_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1260S/1757344710705_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1260S/1757344711874_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1260S/content/documents/1757344712472_SPL-LED-M1260S%20(1)-20250908121639.pdf"
+    ],
+    "videos": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-videos/products/SPL-LED-1260S/videos/1755265391964_video2.mp4"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Input voltage：AC100-240V 50/60Hz\nPower consumption：800W\nlight source：12pcs 60W RGBW 4in1 Led\nBeam angle：4~14º Dimming：0-100% smooth dimming\nStrobe：1S/25（Built in multiple strobe effects）\nTilt: 200°(16bit precise scanning)\nControl panel: LCD screen\nControl mode: DMX512/auto/Sound/RDM\nDMX channel: 20CH/53CH/101CH/155CH/169ACH/169BCH/179CH\nSoftware upgrading: DMX Connect upgrade software\nDMX connections：3Pint XLR Input&Output\nconnector：Input&Output\nIP：IP20\nProduct size：1007*231*300(mm)\nN.W: 25.7 kg (56.7 lbs)",
+    "category_id": 2
+  },
+  {
+    "id": 127,
+    "model": "SPL-LED-1920F",
+    "description": "CABEZAL MOVIL LED BEE EYE 19*20W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1920F/1757703975855_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1920F/1757703978228_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1920F/1757703980761_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1920F/content/documents/1757357360179_1920B-20250908154812.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/U-iY2F6yXEA?si=MqgY-CjIyCDpzetS"
+    ],
+    "new": false,
+    "created_at": "2025-09-08T18:49:22.917517+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Light Sources\n19*20W 4IN1 RGBW LED\nBeam Angle:5.8°- 55° Power Consumption: 350w\nPower Voltage: AC 100-240V, 50/60Hz\nDimension: 338*254*375mm\nNet Weight: 8.5Kgs\nCarton package 1in1 size: 42*34*46cm\nCarton package 1in2 size: 69*44*48cm\nControl\nDMX Channel:21/23/35/78/92/97/99 Channels\nControl Modes: DMX512/mater-Slave/Auto Run/Music\nPan/Tilt\nPan: 540°/ 360°, Tilt: 270° Pan/Tilt Resolution: 8/16 bit\nConstruction\nDisplay:180° reversible 1.8 inch TFT colorful Display\nData In/Out socket: 3-pin & 5-pin XLR sockets\nPower Socket: Power Con in/out\nProtection Rating: IP20\nFeatures\nLED single control, can display arrows, numbers, letters and patterns\nHigh-efficiency optical system, wonderful flower effect plus zoom\nFan work speed auto adjustable with head temperature\nLed temperature protection & Fan run speed automatic based on the head\ntemperature.",
+    "category_id": 2
+  },
+  {
+    "id": 135,
+    "model": "SPL-LED-960 IP",
+    "description": "STROBOS 960 LED IP",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-960%20IP/1758135971726_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-960%20IP/1758135974160_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-960%20IP/content/documents/1757360442949_SPL-LED-S960%20IP-20250908164008.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/WIvSSkbW0AA?si=TEgiZFFS2a1NJo5B"
+    ],
+    "new": false,
+    "created_at": "2025-09-08T19:40:45.340885+00:00",
+    "updated_at": "2025-09-17T19:06:15.980827+00:00",
+    "technical_description": "Voltage：AC100 ~240V 50/60Hz，\nPower consumption: 380W\nLED: 864pcs 0.2W SMD5050 RGB LED+96x2W White 7070 LED\nControl mode ：Master-Slave/Auto/DMX512/Sound\nDMX channel：4CH/16CH/48CH\nDimming: 32bit, 0~100% linear dimming\nFeatures: horse racing + Wash + flashing\nWorking Temp.:-30°~ 45° Strobe: 1~25-Hz；\nCase: metal, black\nConnection: DMX input/output,Powercon input/output with hand-in-hand cables\nIP rating: IP65",
+    "category_id": 3
+  },
+  {
+    "id": 143,
+    "model": "SPL-LED-1810 IP",
+    "description": "PAR LED 18*10W IP65 (RGBWA/UV)",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810%20IP/1758138262021_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810%20IP/1758138265434_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1810%20IP/content/documents/1757692160340_SPL-LED-1810IP%20User%20Manua-20250912124807.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/If1cmRRSsYE?si=lsAHzVYDXT-INaMH"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T15:49:23.07189+00:00",
+    "updated_at": "2025-09-17T19:44:28.929298+00:00",
+    "technical_description": "6/10 DMX512 channels\nSound-Active/Auto-Play/DMX 512/Master-Slave\nLED display\nBuilt-in different inner program, can invoked directly.  IP65 3-pin XLR\nPower supply: AC100V-240V 50/60Hz\nRated power: 140W\nLED: 18PCS 10W RGBWA-UV 6in1 LED\nDimmer: 0-100% linear 32bits\nIP rating: IP65\nHousing: black metal\nMax ambient Temp:-30- 45°C.",
+    "category_id": 4
+  },
+  {
+    "id": 147,
+    "model": "SPL-LED-1210 IPW",
+    "description": "PAR LED 12*10W INALAMBRICO IP65 (RGBWA/UV)\n",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1210%20IPW/1758138469045_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1210%20IPW/1758138472125_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1210%20IPW/content/documents/1757700328564_1210%20IPW.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-12T18:05:31.786238+00:00",
+    "updated_at": "2025-09-17T19:47:55.520131+00:00",
+    "technical_description": "INPUT VOLTAGE: (BATTERY CHARGING CURRENT 4A): 100~240V, 50/60HZ\nLIGHT SOURCE: 12PCS RGBWA/UV 6 IN 1 LAMPS\nLIGHT AVERAGE LIFE: POWERED BY LONG-LIFE LITHIUM-ION BATTERY ( CAN BE CHARGED AND DISCHARGED 500 TIMES)\nPOWER: LED BRIGHTNESS MAXIMUM OUTPUT POWER CAN REACH MORE THAN 100W\nDIMMER: 0-100% DIMMING\nSTROBE: 0-20HZ\nBATTERY STORAGE: 12AH\nBATTERY RUN TIME: 3 HRS AT FULL RGBA ON\nBATTERY CHARGING CYCLE: 4 HRS\nHOUSING: WATERPROOF DIE-CAST CHASSIS FOR TEMPORARY OR OUTDOOR USE\nCONTROL MODE: VIA WIRELESS/ DMX 512\nIP RATE: IP65\nDISPLAY: LCD DISPLAY",
+    "category_id": 4
+  },
+  {
+    "id": 24,
+    "model": "SPL-LED-1260 IP",
+    "description": "12*60W LED moving bar zoom",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M1260YZ%20IP/1755265889714_image.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1260%20IP/content/documents/1757704755261_1303001000093-SPL-LED-1260YZ%20IP%2020241121(2)(3)-20250912161814.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=vYeNbPc0vc4"
+    ],
+    "new": true,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "12PCS 60W RGBW 4in1 LED+96x1.5w 3535 RGB+96X1W 3030 cool white+96x1w 3030 warm\nwhite LEDs\nLED lifespan:≥ 50000 hours\nInput voltage：AC100 ~240V 50/60HZ\nPower consumption： 920W\nBeam angle:4--32º Control mode：DMX,Auto,Sound,RDM\nDMX channel：19/29/109/118/178/180 CH\nIP rating: IP65\nDisplay: LCD display\nRGBW excellent color mixing effect, 0-100% smooth dimming\nSignal input/output: 3 cores\nTilt: 270° (16bit precise scanning)\nProduct size: 1020*150*370 (mm)\nNet weight: 26kg\nEffect: LED point control, temperature control protection, overheating protection, high-efficiency\ncooling system, the fan can detect the temperature of the head of the light and automatically\nadjust the speed",
+    "category_id": 2
+  },
+  {
+    "id": 25,
+    "model": "SPL-LED-1810R",
+    "description": "18*10 LED Wash light bar",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810R/1757344954144_5.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-1810R/1757344955309_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-1810R/content/documents/1757344956639_SPL-LED-1810R%20User%20Manua%20(2)-20250908122056.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=t6XcoTep58o"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "12/110 DMX512 channels\nSound-Active/Auto-Play/DMX 512/Master-Slave\nLED display\nBuilt-in different inner program, can invoked directly. \n3-pins XLR\nPower supply: AC100V-240V 50/60Hz\nRated power: 133W\nLED: 18PCS 10W RGBWA-UV 6in1 LED\nDimmer: 0-100% linear 32bits\nIP rating: IP20Housing: black metal\nMax ambient Temp:-30- 45°C.",
+    "category_id": 2
+  },
+  {
+    "id": 78,
+    "model": "SPL-RGB-115",
+    "description": "15W full color animation laser light",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-115/1755618163525_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-115/1755618166549_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-115/1755618168591_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-115/content/documents/1757343087846_15W%20RGB%20mobile%20app%20laser%20user%20manual%2020240612.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Input voltage: AC100-240V, 50/60Hz\nFuse: BGDP ￠5x20mm 250VAC 2A\nTotal power:100W\nLight source: 15W\nControl mode: Auto/Sound/DMX512/Master-slave/Bluetooth(mobile phone/iPad)\nChannels：17CH/21CH\nScanning system: 30Kpps Scanner, ±30º\n51 internal patterns for show \nSurface temp: Tb=45ºC ( this data testing when the environment temp is 30ºC)\nWorking temp: 10ºC--65ºC\nModulation: Anglog",
+    "category_id": 5
+  },
+  {
+    "id": 93,
+    "model": "SPL-RGB-202",
+    "description": "2W Mobile-phone RGB laser light",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-202/1755618754672_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-202/1755618756479_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-202/1755618757913_3.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-202/1755618759299_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-202/content/documents/1755618760266_SPL-RGB-202%20Especificacion.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": null,
+    "category_id": 5
+  },
+  {
+    "id": 9,
+    "model": "SPL-MHL-380BSW",
+    "description": "380W BSW moving head",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-380BSW/1755631181194_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-MHL-380BSW/1755631183163_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-MHL-380BSW/content/documents/1757340868550_SPL-MHL-380%20BSW%20user%20manual.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=3AH2is8iU1U"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power\nInput voltage: AC100-240V 50/60Hz\nPower consumption: 580W\nFuse：6.3A/250V，￠5*20\nFixture\nIP rating：IP20\nCooling method: fan cool\nMax ambient temp: 45℃\nCase color: black\nLamp\nLamp: Philip 380W lamp\nColor Temp: 8000K\nAverage lifespan: 2,000 hours\nControl\nDMX channel: 24CH\nDMX connector: 3Pin XLR input/output\nPower connector: PowerCon input\nControl mode: DMX/master-slave/auto/sound\nPan: 540º16bits, Tilt: 270º16bits\nPrecise and fast Pan/Tilt movements\nMotorized zoom, focus, frost, split color \n3-phase motor for Pan/Tilt, automatic position correction\n1 static color wheel: 12 static color gobos+open,with color reposition\n1 static gobo wheel: 12 static gobos+open(including 5 mirror gobos),with gobo\n reposition and gobo shaking\n1pc rotating gobo wheel: 7 replaceable gobos + open\n1pc animation effect wheel\nPrism 1: 8-facet rotating, prism 2: 16-facet rotating\nPrism overlay and full color LCD display with 5 buttons\nWith RMD function and software upload via DMX cable\nColor effect\nColor: 12 colors+open, split color, rainbow\nBeam angle: 3-15°\nDimming: 0-100% \nStrobe: 0-25Hz\nLux : 215,000Lux @ 10m\nDimension\nProduct dimension: 38x37x64cm (LxWxH)\nN.W: 20.2KG",
+    "category_id": 1
+  },
+  {
+    "id": 77,
+    "model": "SPL-RGB-230 IP",
+    "description": "30W full color animation laser light IP67",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-230%20IP/1755614719071_6.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-230%20IP/1755614721054_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-230%20IP/1755614722487_5.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-230%20IP/1755614724209_4.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-230%20IP/content/documents/1757341972965_30W%20Waterproof%20RGB%20Animation%20laser%20light%20user%20man.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power consumption:260W\nLight source: 30W\nControl mode: Auto/Sound/DMX512/Master-slave/Ilda/RJ45/SD\nChannels：12CH/16CH/18CH/25CH/27CH\nScanning system: 50Kpps Scanner, ±30º\n51 internal patterns for show \nSurface temp: Tb=45ºC ( this data testing when the environment temp is 30ºC)\nWorking temp: 10ºC--65ºC\nStore temp: 1ºC--40ºC\nModulation: Anglog\nN.W: 32.5Kg",
+    "category_id": 5
+  },
+  {
+    "id": 76,
+    "model": "SPL-RGB-5001",
+    "description": "50W full color animation laser light with FB4",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-286/1755266989546_image.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-5001/content/documents/1757342090665_50W%20with%20FB4%20Waterproof%20RGB%20Animation%20laser%20light-20250908113356.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power consumption:500W\nLight source: 50W\nControl mode: Auto/DMX512/Master-slave/Ilda/RJ45\nChannels：16CH\nScanning system: 50Kpps Scanner, ±20º\n51 internal patterns for show\nSurface temp: Tb=45ºC ( this data testing when the environment temp is 30ºC)\nWorking temp: -10ºC--45ºC\nStore temp: 1ºC--40ºC\nModulation: Anglog\nN.W: 33Kg\nProduct size:52.7x51.5x43.2cm",
+    "category_id": 5
+  },
+  {
+    "id": 87,
+    "model": "SPL-RGB-660",
+    "description": "2W RGB full color moving laser",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-660/1755619075709_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-660/1755619077563_2.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-660/content/documents/1757343275222_Laser%20660.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Light source：4*3W RGBW LED,50000hrs, beam angle: 40° 2W RGB laser: 400MW/638NM + 500MW/520NM+1200MW/450NM，more than 5000hrs. \n33CH DMX Channels\nScanner：15K Scanner angle：±20° \nModulation：Analog modulation\nControl mode ： Master-slave/DMX/Sound/Auto。\nPan：540°(16bit） Tilt：270°(16bit)\nCan driving inner programm by auto or by DMX controller,within inner 166 different static\npatterns and 53 different animation patterns. \n3 pins XLR, and LED display\nEnvironment using temp-10º~~45º，with fans cooling system, and passed standard high and low\ntemp testing,stable enough.\nAC100-240V 50/60Hz ; Power consumption: 70W",
+    "category_id": 5
+  },
+  {
+    "id": 80,
+    "model": "SPL-RGB-246",
+    "description": "10W RGB full color animation laser light",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-246/1755266951729_image.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-246/content/documents/1757343749261_1002%20RGB%20mobile%20app%20laser%20user%20manual%2020240612-20250908120030.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Input voltage: AC100-240V, 50/60Hz\nFuse: BGDP ￠5x20mm   250VAC  2A\nTotal power:69\nLight source: 10W\nControl mode: Auto/Sound/DMX512/Master-slave/Bluetooth(mobile phone/iPad)\nChannels：17CH/21CH\nScanning system: 30Kpps Scanner\nMaximum Angle: a maximum of 50\n51 internal patterns for show \nSurface temp: Tb=45ºC ( this data testing when the environment temp is 30ºC)\nWorking temp: 10ºC--65ºC\nModulation: Anglog",
+    "category_id": 5
+  },
+  {
+    "id": 128,
+    "model": "SPL-LED-M1940",
+    "description": "WASH BEE EYE 19*40W",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M1940/1757705378398_Mesa%20de%20trabajo%202.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M1940/1757705380609_Mesa%20de%20trabajo%201.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-M1940/1757705382552_Mesa%20de%20trabajo%203.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-M1940/content/documents/1757357528086_SPL-LED-M1940%20user%20manual20240731(1)-20250908155047.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-08T18:52:10.799058+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "19PC 40W RGBW LED\nLED average lifetime over 50000 hours, low power consumption\nDMX channel：21/23/35/78/92/97/99 CH\nControl mode ：master/slave, auto, DMX, sound\nZoom angle：3.5º--50º \nPan: 540º (16 bits), TILT: 270º (16 bits)\n Electrical strobe 1~25Hz；\nElectrical dimming：0%~100%；\nBuilt-in programs for auto display or controlled by DMX controller\ncan edit program via DMX controller and front display, and save the programs in CPU of the fixture.\n3Pin DMX connector, LCD display\nAmbient temperature: -10º~~45º \nInput voltage：AC100 ~240V 50/60Hz， power consumption: 600W",
+    "category_id": 2
+  },
+  {
+    "id": 124,
+    "model": "SPL-LED-100S",
+    "description": "BEAM 100W MOVING HEAD",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-100S/1756925908962_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-100S/1756925910627_2.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-100S/content/documents/1757337207392_SPL-LED-100S%20User%20Manual.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-09-03T18:58:32.81341+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Product specification :\nVoltage：100-240V，50/60HZ；\nPower Consumption：100W；\nLamp: LED\nDMX Channel: 9/13CH\nControl mode: DMX512/Master-slave/Auto/Sound\nPan：630°；\nTilt：200°；\nelectronic focus,with RDM\nElectrical dimming：0%~100%；\nBeam angle：2º;\nStrobe:1-23HZ\nDisplay：LED display",
+    "category_id": 1
+  },
+  {
+    "id": 8,
+    "model": "SPL-LED-481CMY",
+    "description": "480W LED CMY+BSW Moving Head",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-481CMY/1756918779500_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-481CMY/1756918781374_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-481CMY/1756918782208_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-481CMY/content/documents/1757340952513_VERSATILIS%20480CMY%20USER%20MANUAL.pdf"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=OvKiEPaUNjM"
+    ],
+    "new": false,
+    "created_at": "2025-08-14T22:16:44.589044+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "Power\nInput voltage: AC100-240V 50/60Hz\nPower consumption: 500W\nFixture\nIP rating: IP20\nCooling method: fan cooling\nMax ambient temp: 45℃\nCase color: black\nLED\nLED: 400W white LED\nColor Temp: 8000K\nAverage lifespan: 50,000 hours\nControl\nDMX channel: 24CH\nDMX connector: 3Pin XLR input/output\nPower connector: PowerCon input\nControl mode: DMX/master-slave/auto/sound/RDM\nPan: 540º16bits, Tilt: 270º16bits\nPrecise and fast Pan/Tilt movements\nMotorized focus, frost, zoom, CMY, split color\n3-phase motor for Pan/Tilt, automatic position correction\nRotating gobo wheel: 11 replaceable gobos plus open\nStatic gobo wheel: 8gobos plus open\nStatic color wheel:7colors +CTO+ open, and split color effect\nPrism 1: 3-facet rotating\nPrism 2: 8-facet rotating\nLCD touch display with 4 buttons\nWith RMD function and software upload via DMX cable\nCutting disc: a set of controllable light spot cutting angle system \ncomposed of 4 corner cutting pieces, the entire cutting angle system \ncan rotate by 90º, and through precise control of the cutting lens, \ncan create any direction of triangle, rhombus, rectangle and other \nshapes of light spots\nColor effect\nColor: 7colors+CTO+open, split color, CMY color mixing\nBeam angle: 3-23°\nDimming: 0-100% linear\nStrobe: 0-25Hz\nLux: 110,000Lux @ 5m & 3°(spot Ø 25mm), \nLux: 26,000Lux @ 5m & 23°(spot Ø 208mm)\nDimension\nProduct dimension: 37x28x67cm (LxWxH)\nN.W: 21.8KG",
+    "category_id": 1
+  },
+  {
+    "id": 123,
+    "model": "SPL-RGB-509",
+    "description": "BARRA LASER*6 RGB",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-509/1755620554880_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-509/1755620556844_4.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-RGB-509/1756920340054_1755620557659_1.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-RGB-509/content/documents/1757342248691_SPL-RGB-509%20User%20Manua-20250908113608.pdf"
+    ],
+    "videos": [],
+    "new": false,
+    "created_at": "2025-08-19T16:22:39.821615+00:00",
+    "updated_at": "2025-09-12T19:55:05.812278+00:00",
+    "technical_description": "2W laser diode; average lifetime is over 2000 hours, low power consumption. DMX channel：120CH/20CH\nControl mode ：Master-Slave/Auto/DMX512/Sound\nElectrical strobe: 1~23Hz；\nInput voltage：AC100 ~240V 50/60Hz，\nPower consumption: 150W\n3pin DMX input/output, Power Con input/output\nAmbient. Temp:-10°-40°",
+    "category_id": 5
+  },
+  {
+    "id": 136,
+    "model": "SPL-LED-960B",
+    "description": "STROBOS 960 LED",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-960B/1758136030021_Capture00091.jpg"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-960B/content/documents/1757360673059_SPL-LED-960B%20User%20Manual-20250908164242.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/7kFHeCamGVA?si=jDKIX51IUcIhJ29H"
+    ],
+    "new": false,
+    "created_at": "2025-09-08T19:44:35.425073+00:00",
+    "updated_at": "2025-09-17T19:07:21.704983+00:00",
+    "technical_description": "Voltage：AC100 ~240V 50/60Hz，\nPower consumption: 185W\nLED: 960pcs SMD5050 RGB LED\nControl mode ：Master-Slave/Auto/DMX512/Sound/ RDM\nDMX channel：4CH/11CH/32CH/39CH\nDimming: 32bit, 0~100% linear dimming\nFeatures: 8-segment horse chasing + wash + strobe\nWorking Temp.:-30°~ 50° Strobe: 1~30-Hz；\nCase: metal, black\nConnection: DMX input/output,Power input/output\nIP rating: IP20",
+    "category_id": 3
+  },
+  {
+    "id": 145,
+    "model": "SPL-LED-750",
+    "description": "PAR LED 7*50W BICOLOR",
+    "images": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-750/1758138377159_2.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-750/1758138380052_1.png",
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-images/products/SPL-LED-750/1758138382005_3.png"
+    ],
+    "contents": [
+      "https://yxldaywdnpzpfeftctpr.supabase.co/storage/v1/object/public/product-content/products/SPL-LED-750/content/documents/1757699429887_SPL-LED-P750%20USER%20MANUAL.pdf"
+    ],
+    "videos": [
+      "https://youtu.be/KMUPxpzxImU?si=NgzuSK10Xa8h99IY"
+    ],
+    "new": false,
+    "created_at": "2025-09-12T17:50:32.08036+00:00",
+    "updated_at": "2025-09-17T19:46:25.288472+00:00",
+    "technical_description": "6/14/18 DMX512 channels\nLight source: 7pcs 50W dual white LED (warm white+nature white)\nControl mode: Sound-Active/Auto-Play/DMX 512/Master-Slave/RDM\nLED display\nBuilt-in different inner program, can invoked directly. \nDMX connector: 3-pins XLR input/ output\nPower connector: IEC input\nPower supply: AC100V-240V 50/60Hz\nRated power: 300W\nLED: 54*3W RGB 3in1 LED\nBeam Angle: 25° \nDimmer: 0-100% linear dimmer\nStrobe: 1-25Hz\nProtection Rate: IP20\nHousing: metal in black\nMax ambient Temp: 45°C.",
+    "category_id": 4
+  }
+]
