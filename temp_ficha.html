@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUXE | The Origen Lounge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#a68b68",
+                        "moss": "#3a4d39",
+                        "background-light": "#f7f7f6",
+                        "background-dark": "#1c1916",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f6;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#161512] antialiased">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-6 md:px-16 lg:px-24 py-4">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2">
+<span class="text-primary">
+<svg class="size-6" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+</svg>
+</span>
+<h1 class="text-xl font-bold tracking-tight">LUXE</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Colecciones</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Sala</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Comedor</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Dormitorio</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] size-4 rounded-full flex items-center justify-center">0</span>
+</button>
+<button class="hover:text-primary transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24 py-8 lg:py-16">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-xs uppercase tracking-widest text-stone-500 mb-12">
+<a class="hover:text-primary" href="#">Inicio</a>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<a class="hover:text-primary" href="#">Asientos</a>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-primary font-semibold">The Origen Lounge</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+<!-- Hero Gallery Section -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="aspect-[4/5] w-full bg-stone-100 rounded-lg overflow-hidden group">
+<img alt="Luxury minimalist armchair" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist luxury lounge chair in oak wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAolej0fvovCSUuf18RBJbQ6Roxkie7ahakoizP7BY9PkDzhr6oAt8eNeUYOazrAVg_mBMl5sGa1MjXMt0M2G_KHIWRQ4D5JjsB7mriDCBPlKmiUBSjdjk2nnnxPBGtWgMXLn7qj2apb7N4GkxyocTxQF-ckpqemzCpaPQQZMVnh1x8q57vpLR1925F4n-D6kDVxaaOuUXU6uLzVp-qIoZef1zvScK8lDGwxWhjvZXtOOFILuNL3yRrLjeqOimvey9PcE8n0_o99nCi"/>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square bg-stone-100 rounded overflow-hidden cursor-pointer border-2 border-primary">
+<img alt="Detail front view" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" data-alt="Close up front view of minimalist chair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7N4dTNTs2Et80WcJTnvodJ4HDV7PBJFUdW0Zi19fADewby842Vm2DUrVTJzbr20HecX10tqFiEtB-rxcYXSfK__bt7ebK4TG3okJUMFZWpIytYT6CPD1o_fOFhh8-JojYmXH1WSiLR03bMtfRn5OMUPigDhTODPmcisg_bmqj1wgVA_6qKHf6ixw7pYGgKysPCurtkByLsunRFVI827sRbdht0ZbXSrAtADbKR89HuwAS2-NKea2EjrO106tGqbPNzr_n2x2V-R0X"/>
+</div>
+<div class="aspect-square bg-stone-100 rounded overflow-hidden cursor-pointer">
+<img alt="Detail profile view" class="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity" data-alt="Side profile of architectural lounge chair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTd_Djg_fJjY7G5P5Ib9Q8ueNkNd0VOLInfXR6Lczkn1GlV5xvltZZZ5GSps3GsNauTPCavv7eUJOzxsV5oa9pvpGofBiLRlIoareT-8UcDGKMEJrvKSYoeRFmldtFXHzUp0UE2lGK5wz_Hy-Onu4nR74BIOTIgVg-XYy_ZvG82pB4X84hk3JM3SQ8Qq95i9FjSC4ycFcvdMshXvNNnejU4EJ5filrKug0QaeECJeqHPmbX2ap1kg-_JVbbXHi7mkQk933bo_crd_q"/>
+</div>
+<div class="aspect-square bg-stone-100 rounded overflow-hidden cursor-pointer">
+<img alt="Texture detail" class="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity" data-alt="Detail of the oak wood grain texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMAdPeQKevEkaaVq_wcj_lQF_LJKgB3hxzLA9S5jX8uNaOJPfjovrGYcsYFrtZcrgdzBsU_nd8vu6Tp_LKRNo6dOmoWqFk95w3FmSg2wymO_ttxtc-klF-N0x-trJtbEvIrUvkd5yIU8Ut_iSGXhemVg_lVFa4xRu7cM9sF4znQ5bQISoOmFPkB_IQ8sNlt1VDeuBrDE7MAW3IQ0lQyb3XuA0YM9EA4h1JGXKuIEToSP5aMcS9HfxY7oY6Xnh4N7B-ecdOI2TWe8dU"/>
+</div>
+<div class="aspect-square bg-stone-100 rounded overflow-hidden cursor-pointer bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">play_circle</span>
+</div>
+</div>
+</div>
+<!-- Product Info Sidebar -->
+<div class="lg:col-span-5 flex flex-col gap-10 lg:sticky lg:top-32">
+<div class="space-y-4">
+<h2 class="text-5xl font-extralight tracking-tight leading-tight">The Origen Lounge</h2>
+<div class="flex items-center justify-between">
+<p class="text-2xl text-primary font-medium">$4,200</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-sm">star</span>
+<span class="text-xs font-semibold uppercase tracking-tighter">4.9 (42 reviews)</span>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<p class="text-stone-600 dark:text-stone-400 leading-relaxed font-light text-lg">
+                        A masterclass in restraint and sculptural form. Crafted from sustainable European Oak and hand-finished with organic oils, the Origen Lounge represents the pinnacle of modern architectural seating. Designed for both visual lightness and unparalleled comfort.
+                    </p>
+<div class="grid grid-cols-2 gap-y-6 pt-4 border-t border-stone-200 dark:border-stone-800">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">Material</p>
+<p class="text-sm font-medium">Roble Europeo Sólido</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">Dimensiones</p>
+<p class="text-sm font-medium">78W x 82D x 72H cm</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">Origen</p>
+<p class="text-sm font-medium">Artesanía Danesa</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-stone-400 mb-1">Ensamblaje</p>
+<p class="text-sm font-medium">Totalmente Ensamblado</p>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="space-y-4">
+<button class="w-full bg-moss hover:bg-moss/90 text-white rounded-lg py-5 px-8 flex items-center justify-center gap-3 transition-all transform active:scale-[0.98] shadow-lg shadow-moss/10">
+<svg class="size-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.522-2.961-2.638-.086-.115-.718-.955-.718-1.82 0-.865.454-1.289.615-1.462.162-.173.353-.216.47-.216.118 0 .235.001.338.005.111.004.259-.042.405.31.144.351.498 1.214.542 1.304.044.09.074.195.015.313-.059.118-.09.191-.177.29-.088.1-.184.223-.264.3-.089.085-.182.177-.078.354.103.177.458.754.984 1.221.677.602 1.248.791 1.425.879.177.088.28.074.383-.044.103-.118.441-.513.559-.688.118-.174.235-.147.397-.088.162.059 1.029.485 1.206.573.177.088.294.132.338.206.044.073.044.425-.1.83zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.172L2 22l4.957-1.301C8.397 21.535 10.122 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path>
+</svg>
+<span class="text-sm font-bold uppercase tracking-[0.2em]">Pedir por WhatsApp</span>
+</button>
+<button class="w-full bg-transparent border border-primary/20 text-[#161512] dark:text-white rounded-lg py-4 px-8 flex items-center justify-center gap-2 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-xs font-semibold uppercase tracking-wider">GUARDAR EN FAVORITOS</span>
+</button>
+</div>
+<div class="flex items-center justify-center gap-8 text-stone-400">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="text-[10px] uppercase font-medium tracking-tighter">ENVÍO MUNDIAL</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined">verified</span>
+<span class="text-[10px] uppercase font-medium tracking-tighter">10 AÑOS DE GARANTÍA</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined">eco</span>
+<span class="text-[10px] uppercase font-medium tracking-tighter">ORIGEN SOSTENIBLE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Information Section -->
+<section class="mt-24 lg:mt-40">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 space-y-8">
+<h3 class="text-3xl font-light tracking-tight">An Architectural Presence</h3>
+<p class="text-stone-600 dark:text-stone-400 leading-relaxed font-light">
+                        The Origen collection was born from the desire to create a chair that feels as though it has been carved from a single piece of wood. The joinery is entirely hidden, using traditional dovetail techniques that have been refined for a modern aesthetic. 
+                        Each piece is numbered and signed by the master craftsman who oversaw its production in our Copenhagen atelier.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-widest border-b border-primary pb-1 group" href="#">
+                        Download PDF Catalog
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+<div class="order-1 md:order-2 aspect-[16/9] rounded-xl overflow-hidden">
+<img alt="Interior living room with lounge chair" class="w-full h-full object-cover" data-alt="Lounge chair in a minimalist modern living room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBXjP-FnkWMZEdEz9anqhi8iGgWa2nsNe_5VTZF4XzAJQpXGDZE-pst_xt-JM4ncNrTyiTmotMjpI0wCE7aw_BNjCG1mpv_62q0AHBa1r9ed83HGTa4tO9d4SyfTRm6BrJ7Pp-pfu-DndEvDf_Ivtuva8q-V72nIME0xBoJb7ngnRZpt-sb6MstzmYIg-bWcei8X-kBvNg7-jsMNk8nXSq6rcqmzmy3SSsyJpeo3SEOz0auC-6nvf5IdOoru1wGljqvHxMJsAEZCuf"/>
+</div>
+</div>
+</section>
+<!-- Suggested Products -->
+<section class="mt-32 border-t border-stone-200 dark:border-stone-800 pt-16">
+<h4 class="text-xs uppercase tracking-[0.3em] font-bold text-stone-400 mb-12 text-center">COMPLETA LA COLECCIÓN</h4>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group cursor-pointer">
+<div class="aspect-square bg-stone-100 rounded mb-4 overflow-hidden relative">
+<img alt="Side table" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Minimalist oak side table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQVdps4NTTQxRwNnX6AOcsiNEZHjxfHLbEWPq7SPlAJPn3tP3KFjoF-0HRpNwmMUZv8SxhLn5T0IVY_Zy8fn1qOOKJBKVakg1UuEFb7jD0RHDmiPo1MeSwtWVnwhMDBkcnf3sVVx4yoSO1k2tt9_ufMphdplJPP4kna0zNyiL-2GuWZHtWlepdOocG0IDXS3gk3-lm0YC9hC_eFi-f5qnmXooXvGw9mN7utAUaoikDzU3hbqaSXF4ZrEcceluz1w_9xH7C0XnHIaMx"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors"></div>
+</div>
+<p class="text-xs font-bold uppercase tracking-wider mb-1">Origen Side Table</p>
+<p class="text-sm text-stone-500">$1,850</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square bg-stone-100 rounded mb-4 overflow-hidden relative">
+<img alt="Dining chair" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Solid wood dining chair minimalist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-br5mRHgtw2rsUX5GS-UFv6XMSM7wPmLpmUscDgNjhPLQj6JXWeCqhf3n-P4NaXvztbleCw8wYbXZ0_JAU7_dyNQ-6gZ8naSC199sUXwrZmTyem4cw2NPNLoOHwQpIsVakkkvNvaFTG5u6M1zv8r7JBHaI-Vzo8MYvAE1leEDUpI9817Q8hCS_1OVvb8CiQnuWFQFhixNVr87jP0yqaauNrA66mRvEcuGlde4tMHOJOwdqY3isLeh42_0Sapd9kMiKg4rW39US9HP"/>
+</div>
+<p class="text-xs font-bold uppercase tracking-wider mb-1">Frame Dining Chair</p>
+<p class="text-sm text-stone-500">$950</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square bg-stone-100 rounded mb-4 overflow-hidden relative">
+<img alt="Floor lamp" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Brushed brass floor lamp" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA9CfpeBuC7BOMCCwrjgwukZm9yhF2ePMrgPvRFuxj63K9nhFDEXYVr0vvflKPSbeJl7xkKoKkRcRMEZWfD-CmoSP0Wm0ngNuz7cHHA2qRUiM8dhRo0q1YzI6vjX-Cq7DtR77Kbz-tj_jj2ETri8egkKYUvxccI0HYXZaVW2qZ5MZYMvUOe7sQbUf0JG7SVHiEixdOn_MYlQp8T4HKVGOlSMOh6FqNdquNC0qdLGGMANLlXc70J-s9PDB7XO0RQIILMiqBabUual8f"/>
+</div>
+<p class="text-xs font-bold uppercase tracking-wider mb-1">Lucent Floor Lamp</p>
+<p class="text-sm text-stone-500">$1,100</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square bg-stone-100 rounded mb-4 overflow-hidden relative">
+<img alt="Rug" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Woven textured wool rug" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYrHsnZHes4ab37mFEvQfIkHexkReCKjvFp-sGN8r2nZMLqr-p8e_rSgdd9ZTx7fVQmwI5Q3123PXAN4WQS1jtPJNbStlwrDPeRm2RrFMToKD9RWss9dC3wqhaI-j3B8CbWg3XHxMcGBw8yLkAU0H3F8p19U_2uLf4PwE3P5nTZGLKmbDVWLS0TRMytAfXpk-xX1qrXlUrcz-d4tscaceaLqyMxNp3nd3cE79P0vi1rbDJ5WjLdJfqWvA8S_B9nde8VbpcMGHNfMZN"/>
+</div>
+<p class="text-xs font-bold uppercase tracking-wider mb-1">Aura Wool Rug</p>
+<p class="text-sm text-stone-500">$2,400</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-stone-100 dark:bg-stone-900 px-6 md:px-16 lg:px-24 py-16 mt-32">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">LUXE</span>
+</div>
+<p class="text-sm text-stone-500 leading-relaxed">Defining modern elegance through timeless furniture design and architectural precision.</p>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest mb-6">Explorar</h5>
+<ul class="space-y-4 text-sm text-stone-500">
+<li><a class="hover:text-primary transition-colors" href="#">Journal</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Showrooms</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Project Portfolio</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest mb-6">Servicio</h5>
+<ul class="space-y-4 text-sm text-stone-500">
+<li><a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Care Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-bold uppercase tracking-widest mb-6">Boletín</h5>
+<div class="flex border-b border-stone-300 dark:border-stone-700 py-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-stone-400" placeholder="Tu correo electrónico" type="email"/>
+<button class="text-primary font-bold uppercase text-[10px] tracking-widest">UNIRSE</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto pt-16 mt-16 border-t border-stone-200 dark:border-stone-800 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-stone-400">
+<p>© 2024 LUXE FURNITURE ATELIER. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8">
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+<a href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>

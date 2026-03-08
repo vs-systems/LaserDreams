@@ -1,0 +1,277 @@
+<?php
+require __DIR__ . '/includes/db.php';
+require __DIR__ . '/includes/header.php';
+
+/* ========================= */
+/* Helper seguro PHP 8       */
+/* ========================= */
+function e($v)
+{
+    return htmlspecialchars((string) ($v ?? ''), ENT_QUOTES, 'UTF-8');
+}
+
+/* ========================= */
+/* FILTROS Y PAGINACIÓN      */
+/* ========================= */
+
+$busqueda = $_GET['q'] ?? '';
+$categoria = $_GET['categoria'] ?? '';
+
+$porPagina = 20;
+$pagina = isset($_GET['page']) ? (int) $_GET['page'] : 1;
+if ($pagina < 1)
+    $pagina = 1;
+
+$offset = ($pagina - 1) * $porPagina;
+
+/* ========================= */
+/* CONTAR TOTAL PRODUCTOS    */
+/* ========================= */
+
+$sqlCount = "SELECT COUNT(*) FROM productos p WHERE p.activo = 1";
+$paramsCount = [];
+
+if ($busqueda !== '') {
+    $sqlCount .= " AND (p.titulo LIKE ? OR p.descripcion LIKE ? OR p.codigo LIKE ?)";
+    $like = "%$busqueda%";
+    $paramsCount = [$like, $like, $like];
+}
+
+if ($categoria !== '') {
+    $sqlCount .= " AND p.categoria_id = ?";
+    $paramsCount[] = $categoria;
+}
+
+$stmtCount = $pdo->prepare($sqlCount);
+$stmtCount->execute($paramsCount);
+$totalProductos = $stmtCount->fetchColumn();
+$totalPaginas = ceil($totalProductos / $porPagina);
+
+/* ========================= */
+/* CONSULTA PRINCIPAL        */
+/* ========================= */
+
+$sql = "
+SELECT p.*, p.foto_principal AS imagen_principal
+FROM productos p
+WHERE p.activo = 1
+";
+
+$params = [];
+
+if ($busqueda !== '') {
+    $sql .= " AND (p.titulo LIKE ? OR p.descripcion LIKE ? OR p.codigo LIKE ?)";
+    $like = "%$busqueda%";
+    $params = [$like, $like, $like];
+}
+
+if ($categoria !== '') {
+    $sql .= " AND p.categoria_id = ?";
+    $params[] = $categoria;
+}
+
+$sql .= " ORDER BY p.creado_en DESC LIMIT $porPagina OFFSET $offset";
+
+$stmt = $pdo->prepare($sql);
+$stmt->execute($params);
+$productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre")->fetchAll();
+?>
+
+
+<?php if (isset($is_home) && $is_home && empty($busqueda) && empty($categoria) && $pagina == 1): ?>
+    <!-- Sección Hero con Video de Fondo (Estilo Sanyi) -->
+    <div class="relative w-full h-[70vh] md:h-[80vh] overflow-hidden bg-black flex items-center justify-center">
+        <!-- El video debe existir en /assets/bg-home.mp4 o reemplazarse por una URL final -->
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-40">
+            <source src="/assets/bg-home.mp4" type="video/mp4">
+        </video>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center gap-6">
+            <h2 class="text-sm font-black text-violet-500 uppercase tracking-[0.4em] mb-2 animate-pulse">BIENVENIDO A</h2>
+            <h1 class="text-5xl md:text-8xl font-black text-white tracking-tighter drop-shadow-2xl">
+                LASER<span class="text-violet-500">DREAMS</span>
+            </h1>
+            <p
+                class="text-lg md:text-xl text-gray-300 font-medium tracking-wide mt-4 max-w-2xl text-center leading-relaxed">
+                Equipamiento técnico e iluminación profesional para DJs, Eventos y Teatros.
+            </p>
+            <div class="mt-8 flex gap-4">
+                <a href="#catalogo-container"
+                    class="bg-violet-600 hover:bg-white hover:text-black text-white px-8 py-4 rounded-full font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-violet-500/20 active:scale-95">
+                    Ver Catálogo
+                </a>
+                <a href="https://wa.me/5491100000000" target="_blank"
+                    class="bg-white/10 backdrop-blur border border-white/20 text-white hover:bg-white/20 px-8 py-4 rounded-full font-black text-xs uppercase tracking-widest transition-all active:scale-95">
+                    Asesoría
+                </a>
+            </div>
+        </div>
+
+        <!-- Gradiente inferior para transición suave -->
+        <div
+            class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fbfbfb] to-transparent pointer-events-none">
+        </div>
+    </div>
+<?php endif; ?>
+
+<div id="catalogo-container" class="max-w-7xl mx-auto px-4 py-12">
+
+    <!-- Header Sección -->
+    <div class="mb-12 text-center">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">Nuestro Catálogo</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Explora nuestra colección de muebles diseñados para elevar tu
+            espacio.</p>
+    </div>
+
+    <!-- Filtros -->
+    <div
+        class="flex flex-col md:flex-row gap-4 mb-10 items-center justify-between bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div class="relative w-full md:w-96">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
+            <input type="text" id="buscador"
+                class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all outline-none"
+                placeholder="¿Qué estás buscando?..." value="<?= e($busqueda) ?>">
+        </div>
+
+        <div class="w-full md:w-64">
+            <select id="filtroCategoria"
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all outline-none appearance-none bg-no-repeat bg-[right_1rem_center] bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20stroke%3D%22%236b7280%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%20d%3D%22m6%208%204%204%204-4%22%2F%3E%3C%2Fsvg%3E')]">
+                <option value="">Todas las categorías</option>
+                <?php foreach ($categorias as $c): ?>
+                    <option value="<?= $c['id'] ?>" <?= $categoria == $c['id'] ? 'selected' : '' ?>>
+                        <?= e($c['nombre']) ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+    </div>
+
+    <!-- Grid de Productos -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+        <?php if (empty($productos)): ?>
+            <div class="col-span-full py-20 text-center">
+                <div class="text-6xl mb-4">🪑</div>
+                <p class="text-xl text-gray-500">No se encontraron productos que coincidan con tu búsqueda.</p>
+            </div>
+        <?php endif; ?>
+
+        <?php foreach ($productos as $p): ?>
+
+            <a href="/producto.php?id=<?= (int) $p['id'] ?>"
+                class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
+
+                <div class="aspect-[4/5] overflow-hidden relative">
+                    <?php if (!empty($p['imagen_principal'])): ?>
+                        <img src="/uploads/productos/<?= e($p['imagen_principal']) ?>" alt="<?= e($p['titulo']) ?>"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <?php else: ?>
+                        <img src="https://via.placeholder.com/600x800?text=Sin+imagen" class="w-full h-full object-cover">
+                    <?php endif; ?>
+
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors"></div>
+                </div>
+
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex flex-wrap gap-1 mb-2">
+                        <?php if (!empty($p['es_novedad'])): ?>
+                            <span
+                                class="bg-blue-600 text-white text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded shadow-sm">Nuevo</span>
+                        <?php endif; ?>
+                        <?php if (!empty($p['es_oferta'])): ?>
+                            <span
+                                class="bg-red-600 text-white text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded shadow-sm">Oferta</span>
+                        <?php endif; ?>
+                        <?php if (!empty($p['es_destacado'])): ?>
+                            <span
+                                class="bg-violet-500 text-black text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded shadow-sm">Destacado</span>
+                        <?php endif; ?>
+                        <?php if (!empty($p['es_pocas_unidades'])): ?>
+                            <span
+                                class="bg-gray-900 text-white text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded shadow-sm">Pocas
+                                Unidades</span>
+                        <?php endif; ?>
+                    </div>
+                    <h3
+                        class="text-lg font-bold text-gray-900 group-hover:text-violet-600 transition-colors mb-2 line-clamp-2">
+                        <?= e($p['titulo']) ?>
+                    </h3>
+
+                    <div class="mt-auto">
+                        <?php 
+                        $cotizacion = $GLOBALS['cotizacion_aplicada'] ?? 1000;
+                        $subtotal = ((float)$p['precio_venta_usd']) * $cotizacion;
+                        $recargo = $subtotal * 0.05;
+                        $precio_final = $subtotal + $recargo;
+                        ?>
+                        <div class="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">
+                            USD <?= number_format((float) $p['precio_venta_usd'], 2, ',', '.') ?>
+                        </div>
+                        <div class="text-2xl font-black text-gray-900 mb-4">
+                            $<?= number_format($precio_final, 0, ',', '.') ?> <span class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Final ARS</span>
+                        </div>
+
+                        <button
+                            class="w-full bg-gray-900 text-white py-3 rounded-2xl font-bold hover:bg-violet-500 hover:text-black transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2"
+                            onclick="event.preventDefault(); event.stopPropagation(); addToCartFromButton(this);"
+                            data-id="<?= (int) $p['id'] ?>" data-titulo="<?= e($p['titulo']) ?>"
+                            data-precio="<?= $precio_final ?>"
+                            data-imagen="<?= !empty($p['imagen_principal']) ? '/uploads/productos/' . $p['imagen_principal'] : '' ?>"
+                            data-url="https://laserdreams.com.ar/producto.php?id=<?= (int) $p['id'] ?>">
+                            <span>⚡</span> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+            </a>
+
+        <?php endforeach; ?>
+
+    </div>
+
+    <!-- Paginación -->
+    <?php if ($totalPaginas > 1): ?>
+        <div class="mt-16 flex justify-center items-center gap-4">
+            <?php if ($pagina > 1): ?>
+                <a href="?page=<?= $pagina - 1 ?>&q=<?= urlencode($busqueda) ?>&categoria=<?= urlencode($categoria) ?>"
+                    class="p-3 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-all shadow-sm">
+                    <span class="block w-6 h-6">←</span>
+                </a>
+            <?php endif; ?>
+
+            <div class="bg-white px-6 py-3 rounded-2xl border border-gray-200 shadow-sm font-medium">
+                Página <span class="text-violet-600"><?= $pagina ?></span> de <?= $totalPaginas ?>
+            </div>
+
+            <?php if ($pagina < $totalPaginas): ?>
+                <a href="?page=<?= $pagina + 1 ?>&q=<?= urlencode($busqueda) ?>&categoria=<?= urlencode($categoria) ?>"
+                    class="p-3 rounded-full bg-white border border-gray-200 hover:bg-gray-50 transition-all shadow-sm">
+                    <span class="block w-6 h-6">→</span>
+                </a>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
+
+</div>
+
+<script>
+    document.getElementById('filtroCategoria').addEventListener('change', function () {
+        const cat = this.value;
+        const busq = document.getElementById('buscador').value;
+        window.location.href = `?categoria=${cat}&q=${busq}`;
+    });
+
+    let searchTimeout;
+    document.getElementById('buscador').addEventListener('input', function () {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            const cat = document.getElementById('filtroCategoria').value;
+            const busq = this.value;
+            window.location.href = `?categoria=${cat}&q=${busq}`;
+        }, 500);
+    });
+</script>
+
+<?php require __DIR__ . '/includes/footer.php'; ?>

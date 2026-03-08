@@ -1,0 +1,26 @@
+name: Despliegue MG Muebles
+
+on:
+  push:
+    branches:
+      - main  # O la rama que estés usando
+
+jobs:
+  web-deploy:
+    name: 🎉 Desplegar sitio
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Obtener código
+      uses: actions/checkout@v3
+
+    - name: 🚀 Desplegar vía FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: 109.106.251.247
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ./
+        timeout: 9999
+        # Los secretos deben configurarse en GitHub:
+        # FTP_USERNAME: u499089589.Mgmuebles
+        # FTP_PASSWORD: Blanca1938@

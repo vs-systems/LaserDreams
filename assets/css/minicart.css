@@ -1,0 +1,138 @@
+/* ============================= */
+/* MINI CART DRAWER              */
+/* ============================= */
+
+#miniCartOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 998;
+    display: none;
+}
+
+#miniCart {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 100%;
+    max-width: 380px;
+    height: 100vh;
+    background: #fff;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    transition: right .35s ease;
+    box-shadow: -6px 0 20px rgba(0,0,0,.15);
+}
+
+#miniCart.open {
+    right: 0;
+}
+
+#miniCart header {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#miniCart header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+#miniCart header button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#miniCart .items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+}
+
+.mini-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+.mini-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.mini-item .info {
+    flex: 1;
+}
+
+.mini-item .info h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.mini-item .info small {
+    color: #666;
+}
+
+.mini-qty {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.mini-qty button {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.mini-footer {
+    border-top: 1px solid #eee;
+    padding: 14px;
+}
+
+.mini-footer .total {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mini-footer a,
+.mini-footer button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #111;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary {
+    background: #f2f2f2;
+    border: none;
+    margin-top: 8px;
+}
+
+/* Mobile fine-tuning */
+@media (max-width: 480px) {
+    #miniCart {
+        max-width: 100%;
+    }
+}

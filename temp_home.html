@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KIZUNA | Luxury Japandi Furniture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#a68b68",
+                        "background-light": "#f9f9f9",
+                        "background-dark": "#1c1916",
+                        "neutral-soft": "#efedeb",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="font-display text-[#161512] bg-background-light dark:bg-background-dark selection:bg-primary/30">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">storm</span>
+<h1 class="font-serif text-2xl font-bold tracking-tight">KIZUNA</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8 uppercase tracking-widest text-[10px] font-semibold text-[#161512]/60">
+<a class="hover:text-primary transition-colors" href="#">Living</a>
+<a class="hover:text-primary transition-colors" href="#">Dining</a>
+<a class="hover:text-primary transition-colors" href="#">Bedroom</a>
+<a class="hover:text-primary transition-colors" href="#">Studio</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center bg-neutral-soft/50 rounded-full px-4 py-1.5 border border-transparent focus-within:border-primary/20 transition-all">
+<span class="material-symbols-outlined text-sm text-[#161512]/40">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-40 placeholder:text-[#161512]/30" placeholder="Buscar piezas..." type="text"/>
+</div>
+<button class="relative p-2 text-[#161512]/80 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 size-2 bg-primary rounded-full"></span>
+</button>
+<button class="p-2 text-[#161512]/80 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-6 md:px-12 py-12">
+<!-- Breadcrumbs & Header -->
+<div class="mb-16">
+<nav class="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-[#161512]/40 mb-6">
+<a class="hover:text-primary" href="#">Inicio</a>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-primary font-bold">Catálogo</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<h2 class="font-serif text-5xl md:text-7xl mb-6 leading-tight">La Colección de Otoño</h2>
+<p class="text-lg text-[#161512]/60 font-light leading-relaxed max-w-lg">
+                        Inspired by the seasonal transitions in Nara. Handcrafted pieces that balance Japanese minimalism with Scandinavian warmth.
+                    </p>
+</div>
+<!-- Filters -->
+<div class="flex items-center gap-8 text-xs uppercase tracking-widest font-bold pb-2">
+<button class="flex items-center gap-2 border-b-2 border-primary pb-1">Todos los Muebles</button>
+<button class="flex items-center gap-2 border-b-2 border-transparent hover:border-primary/30 pb-1 transition-all">Asientos</button>
+<button class="flex items-center gap-2 border-b-2 border-transparent hover:border-primary/30 pb-1 transition-all">Mesas</button>
+<button class="flex items-center gap-2 border-b-2 border-transparent hover:border-primary/30 pb-1 transition-all">Almacenamiento</button>
+<button class="flex items-center gap-2 border-b-2 border-transparent hover:border-primary/30 pb-1 transition-all text-primary/40"><span class="material-symbols-outlined text-lg">tune</span> Filtros</button>
+</div>
+</div>
+</div>
+<!-- Asymmetric Grid -->
+<div class="masonry-grid">
+<!-- Large Focus Card -->
+<div class="col-span-12 md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden aspect-[16/10] bg-neutral-soft rounded-lg">
+<img alt="Solid Oak Credenza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern solid oak credenza with clean lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCS1wg4z8WZbzlNfhnYs7noUgxA91nGjojWxKgte-xXRBEEJoI395eUgwpPy_vxyAfti7m3EszywNx7cHFzz8k1voTipqQ_KJFbLq37xW7rTl6HJtJ9xDJxv2Jd1XQo2NWfos1V5TkF9DMxrpvfnjQyQ-oKxPiu038vYjuC3W3IMmHrOO7CQ_RTynfZxJKyAwSk4ePFMvJvffGYFgpEjRbK3MS6k8V8FAoql-vIopmuRnxQFAGwgHex30NChMbHiO7U7s9B_K1zYn"/>
+<button class="absolute bottom-6 right-6 size-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined font-light">add</span>
+</button>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-serif text-2xl group-hover:text-primary transition-colors">Aparador de Roble Macizo</h3>
+<p class="text-sm text-[#161512]/50 mt-1">Artesanía de Nara, Japón</p>
+</div>
+<span class="font-display font-medium text-lg">$2,400</span>
+</div>
+</div>
+<!-- Standard Card -->
+<div class="col-span-12 md:col-span-4 group cursor-pointer md:mt-12">
+<div class="relative overflow-hidden aspect-[4/5] bg-neutral-soft rounded-lg">
+<img alt="Woven Lounge Chair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist woven lounge chair with light wood frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-hTxtszIfeYnFb8hVfEc3NJwDmV5EF4lVt9oDitnF0GmxGy-ufLeoAgNNG5i4dvpS3kLO-vecPOI4tasDqtATLxXBmuhaO3UTIOsepLu_kRgjEgXAsoZ7tV9DmLhLLpyTvFuk-GkJK34Tbd_4MmrKJWHqlJUgoWLkIOcNkR3EH1P2ntJg0WOp_0fPgBuC0l0fT9k1g8SUX4F1KBPFLyzw9qmDszVLlry0mAaaevMP3_bDQvyIjMk1G7tWisXxv72jOjeT2NqJbNI8"/>
+<button class="absolute bottom-6 right-6 size-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm opacity-0 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined font-light">add</span>
+</button>
+</div>
+<div class="mt-6">
+<h3 class="font-serif text-xl group-hover:text-primary transition-colors">Sillón Tejido</h3>
+<div class="flex justify-between items-center mt-2">
+<p class="text-xs text-[#161512]/50 uppercase tracking-widest">Roble Natural / Lino</p>
+<span class="font-display font-medium">$850</span>
+</div>
+</div>
+</div>
+<!-- Medium Card 1 -->
+<div class="col-span-12 md:col-span-4 group cursor-pointer -mt-4 md:-mt-24">
+<div class="relative overflow-hidden aspect-[3/4] bg-neutral-soft rounded-lg">
+<img alt="Ceramic Pendant Light" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Matte ceramic pendant light hanging over wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMGUBptW-94FKIhnluaVFDqskqbFckN-RU10Rh_f7RCYcL829mMMbVfScmvcoM99mn9WvkEbP6K3qII7aMlrZXOOd_Dvq0FV9TPW9uBelIHuHjsrV33sEKNjzvi72yQXHsNwi4bZMiz_ljkOTRidAnBRAMG8QFUr9i7XfDswcToj1N858k_Bf5FdiQ-zwrYkjBwedrqwA-av-mMZhfZ-cNXU8Ay7P4CvZdA39ii_k0a-4SMOTRepFzvhAtxkX1yFzRn8OH53jX92zx"/>
+<button class="absolute bottom-6 right-6 size-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm opacity-0 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined font-light">add</span>
+</button>
+</div>
+<div class="mt-6">
+<h3 class="font-serif text-xl group-hover:text-primary transition-colors">Lámpara Tsuchi</h3>
+<div class="flex justify-between items-center mt-2">
+<p class="text-xs text-[#161512]/50 uppercase tracking-widest">Arcilla Hecha a Mano</p>
+<span class="font-display font-medium">$320</span>
+</div>
+</div>
+</div>
+<!-- Medium Card 2 -->
+<div class="col-span-12 md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden aspect-square bg-neutral-soft rounded-lg">
+<img alt="Minimalist Desk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sleek wooden desk with slender legs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK_IHIBCnV3fHj5aCEGn-jmelpBXA48mS7tvxo-Dg1bekm6gI9V6dMa7E2yKG3soWYmI4_rYRJw47m3DSWnT_nmRIl295E07V_DEfCFKO2uSEtypl0aa3efVbprfVREwbyRYXSN0KIA0UFgjZA6Aq_sDOLyPb_Y_Gg3-grsQ018CCW3lj8pmyRGgYOnJZE_EQ_jSn9KrVEUnXCFtKSTK-wYBsRGNXr_PX38pk2CvK9sWfiosomY2UmEsghfg829tiq1wI15TiYp7Qm"/>
+<button class="absolute bottom-6 right-6 size-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm opacity-0 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined font-light">add</span>
+</button>
+</div>
+<div class="mt-6">
+<h3 class="font-serif text-xl group-hover:text-primary transition-colors">Escritorio Nara</h3>
+<div class="flex justify-between items-center mt-2">
+<p class="text-xs text-[#161512]/50 uppercase tracking-widest">Madera de Fresno</p>
+<span class="font-display font-medium">$1,150</span>
+</div>
+</div>
+</div>
+<!-- Wide Card -->
+<div class="col-span-12 md:col-span-4 group cursor-pointer md:mt-32">
+<div class="relative overflow-hidden aspect-[4/5] bg-neutral-soft rounded-lg">
+<img alt="Low Platform Bed" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Japanese style platform bed in light wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPE2Ph_qM7JsSTGXN0lZbG7Y6AQmLKbal2ZuZO8T2zRVDjVhb3DqAkWp8tQRfjUlx9MEItEsy0BiLv4NJOqh_f37OOvOm7X_XFvzFAP7bRAuYj-TQUAKM17fxvaH5ZaAvLGuD_bDHMZB71IGaOq8xTyZUvqyxNmjy-6mhDumKBPieXIEdZ9JGduSvtCL81B6iizt240flO7WxlgxWPa4Bl8RL20unoEtc-JG7qO0u516N7V6CZoOsQNZMjXc5soz48jha6bGXyAF2E"/>
+<button class="absolute bottom-6 right-6 size-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm opacity-0 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined font-light">add</span>
+</button>
+</div>
+<div class="mt-6">
+<h3 class="font-serif text-xl group-hover:text-primary transition-colors">Cama de Plataforma Zenith</h3>
+<div class="flex justify-between items-center mt-2">
+<p class="text-xs text-[#161512]/50 uppercase tracking-widest">Queen / King</p>
+<span class="font-display font-medium">$3,800</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="flex justify-center py-24">
+<button class="px-12 py-4 bg-transparent border border-[#161512]/10 hover:border-primary hover:text-primary transition-all text-xs uppercase tracking-[0.3em] font-bold rounded-lg">DESCUBRIR MÁS</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-soft/30 dark:bg-background-dark border-t border-primary/10 py-24">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary text-2xl">storm</span>
+<h4 class="font-serif text-xl font-bold tracking-tight">KIZUNA</h4>
+</div>
+<p class="text-sm text-[#161512]/60 leading-relaxed font-light">Diseño atemporal para el hogar consciente. Envíos a todo el mundo desde Nara y Copenhague.</p>
+</div>
+<div>
+<h5 class="text-[10px] uppercase tracking-widest font-bold mb-8">Colecciones</h5>
+<ul class="space-y-4 text-sm text-[#161512]/60 font-light">
+<li><a class="hover:text-primary transition-colors" href="#">Otoño 2024</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">La Serie Studio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Clásicos Heritage</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Novedades</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[10px] uppercase tracking-widest font-bold mb-8">Colecciones</h5>
+<ul class="space-y-4 text-sm text-[#161512]/60 font-light">
+<li><a class="hover:text-primary transition-colors" href="#">Envíos y Devoluciones</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Instrucciones de Cuidado</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Salas de Exhibición</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sostenibilidad</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[10px] uppercase tracking-widest font-bold mb-8">Colecciones</h5>
+<p class="text-xs text-[#161512]/50 mb-6 leading-relaxed">Únete a nuestra lista de correo para acceso anticipado a nuevas colecciones e ideas de diseño.</p>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-[#161512]/10 focus:border-primary focus:ring-0 px-0 py-2 text-sm placeholder:text-[#161512]/30" placeholder="Dirección de correo" type="email"/>
+<button class="absolute right-0 bottom-2 text-primary">
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 mt-24 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest text-[#161512]/40">
+<p>© 2024 KIZUNA Design Studio. Todos los derechos reservados.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary" href="#">Instagram</a>
+<a class="hover:text-primary" href="#">Pinterest</a>
+<a class="hover:text-primary" href="#">Revista</a>
+</div>
+</div>
+</footer>
+</body></html>
