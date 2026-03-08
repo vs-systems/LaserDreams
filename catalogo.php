@@ -89,9 +89,9 @@ $categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre")->
         </video>
 
         <div class="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center gap-6">
-            <h2 class="text-sm font-black text-violet-500 uppercase tracking-[0.4em] mb-2 animate-pulse">BIENVENIDO A</h2>
+            <h2 class="text-sm font-black text-red-600 uppercase tracking-[0.4em] mb-2 animate-pulse">BIENVENIDO A</h2>
             <h1 class="text-5xl md:text-8xl font-black text-white tracking-tighter drop-shadow-2xl">
-                LASER<span class="text-violet-500">DREAMS</span>
+                LASER<span class="text-red-600">DREAMS</span>
             </h1>
             <p
                 class="text-lg md:text-xl text-gray-300 font-medium tracking-wide mt-4 max-w-2xl text-center leading-relaxed">
@@ -99,7 +99,7 @@ $categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre")->
             </p>
             <div class="mt-8 flex gap-4">
                 <a href="#catalogo-container"
-                    class="bg-violet-600 hover:bg-white hover:text-black text-white px-8 py-4 rounded-full font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-violet-500/20 active:scale-95">
+                    class="bg-red-600 hover:bg-white hover:text-red-600 text-white px-8 py-4 rounded-full font-black text-xs uppercase tracking-widest transition-all shadow-xl shadow-red-600/20 active:scale-95">
                     Ver Catálogo
                 </a>
                 <a href="https://wa.me/5491100000000" target="_blank"
@@ -200,9 +200,9 @@ $categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre")->
                     </h3>
 
                     <div class="mt-auto">
-                        <?php 
+                        <?php
                         $cotizacion = $GLOBALS['cotizacion_aplicada'] ?? 1000;
-                        $subtotal = ((float)$p['precio_venta_usd']) * $cotizacion;
+                        $subtotal = ((float) $p['precio_venta_usd']) * $cotizacion;
                         $recargo = $subtotal * 0.05;
                         $precio_final = $subtotal + $recargo;
                         ?>
@@ -210,7 +210,8 @@ $categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre")->
                             USD <?= number_format((float) $p['precio_venta_usd'], 2, ',', '.') ?>
                         </div>
                         <div class="text-2xl font-black text-gray-900 mb-4">
-                            $<?= number_format($precio_final, 0, ',', '.') ?> <span class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Final ARS</span>
+                            $<?= number_format($precio_final, 0, ',', '.') ?> <span
+                                class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Final ARS</span>
                         </div>
 
                         <button

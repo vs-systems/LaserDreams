@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso Admin | MG Muebles</title>
+    <title>Acceso Admin | Laserdreams</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="max-w-md w-full">
         <div class="text-center mb-10">
-            <h1 class="text-3xl font-black text-gray-900 tracking-tight">MG <span class="text-violet-500">Muebles</span>
+            <h1 class="text-3xl font-black text-gray-900 tracking-tight">LASER<span class="text-red-600">DREAMS</span>
             </h1>
             <p class="text-gray-500 font-medium mt-2">Panel de Administración</p>
         </div>
@@ -79,19 +79,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div>
                     <label class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Usuario</label>
                     <input type="text" name="usuario" required
-                        class="w-full px-5 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 outline-none transition-all font-medium">
+                        class="w-full px-5 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-red-500 focus:ring-2 focus:ring-red-500/20 outline-none transition-all font-medium">
                 </div>
 
                 <div>
                     <label
                         class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Contraseña</label>
                     <input type="password" name="clave" required
-                        class="w-full px-5 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 outline-none transition-all font-medium">
+                        class="w-full px-5 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-red-500 focus:ring-2 focus:ring-red-500/20 outline-none transition-all font-medium">
                 </div>
 
                 <div class="pt-4">
                     <button type="submit"
-                        class="w-full bg-gray-900 text-white py-5 rounded-2xl font-black text-lg hover:bg-violet-500 hover:text-black transition-all transform active:scale-95 shadow-xl shadow-gray-200">
+                        class="w-full bg-gray-900 text-white py-5 rounded-2xl font-black text-lg hover:bg-red-600 hover:text-white transition-all transform active:scale-95 shadow-xl shadow-gray-200">
                         Ingresar al Sistema
                     </button>
                 </div>

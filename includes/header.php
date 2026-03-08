@@ -42,8 +42,8 @@ if (!defined('HEADER_INCLUDED')) {
         <header class="bg-[#121212] text-white sticky top-0 z-50 shadow-2xl">
             <div class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
                 <a href="/" class="flex items-center gap-3 group">
-                    <span class="text-2xl font-black tracking-tighter transition-all group-hover:text-violet-500">
-                        LASER<span class="text-violet-500 group-hover:text-white">DREAMS</span>
+                    <span class="text-2xl font-black tracking-tighter transition-all group-hover:text-red-600">
+                        LASER<span class="text-red-600 group-hover:text-white">DREAMS</span>
                     </span>
                 </a>
 
@@ -54,7 +54,7 @@ if (!defined('HEADER_INCLUDED')) {
 
                 <div class="flex items-center gap-6">
                     <a href="/carrito.php" id="cartButton"
-                        class="bg-violet-500 text-black px-6 py-2.5 rounded-full flex items-center gap-3 transition-all hover:bg-white hover:scale-105 shadow-lg shadow-violet-500/20">
+                        class="bg-red-600 text-white px-6 py-2.5 rounded-full flex items-center gap-3 transition-all hover:bg-white hover:text-red-600 hover:scale-105 shadow-lg shadow-red-600/20">
                         <span class="text-lg">🛒</span>
                         <span class="font-black text-xs uppercase tracking-wider">Carrito</span>
                         <span id="carrito-contador"
