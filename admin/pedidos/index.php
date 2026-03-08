@@ -57,6 +57,12 @@ require __DIR__ . '/../includes/header.php';
                                     class="text-[10px] text-gray-400 font-bold uppercase tracking-widest"><?= htmlspecialchars($p['localidad'] ?? 'S/D') ?></span>
                                 <span
                                     class="text-[10px] text-gray-400 font-bold uppercase tracking-widest"><?= htmlspecialchars($p['email'] ?? 'WhatsApp Link') ?></span>
+                                <?php if ($p['requiere_factura']): ?>
+                                    <span
+                                        class="inline-block mt-1 px-2 py-0.5 bg-violet-100 text-violet-700 text-[9px] font-black uppercase tracking-widest rounded w-max">
+                                        Requiere Factura <?= htmlspecialchars($p['tipo_factura']) ?>
+                                    </span>
+                                <?php endif; ?>
                             </div>
                         </td>
                         <td class="px-8 py-6">
@@ -76,7 +82,17 @@ require __DIR__ . '/../includes/header.php';
                             </div>
                         </td>
                         <td class="px-8 py-6">
-                            <span class="font-black text-gray-900">$<?= number_format($p['total'], 0, ',', '.') ?></span>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-black text-white bg-red-600 px-3 py-1 rounded-lg inline-block w-max shadow-sm">
+                                    $<?= number_format($p['total'], 0, ',', '.') ?>
+                                </span>
+                                <?php if ($p['requiere_factura']): ?>
+                                    <span class="text-[9px] text-gray-400 font-bold mt-1 uppercase tracking-widest">
+                                        Incl. IVA: $<?= number_format($p['iva_aplicado'], 0, ',', '.') ?>
+                                    </span>
+                                <?php endif; ?>
+                            </div>
                         </td>
                         <td class="px-8 py-6">
                             <form method="post" action="update_estado.php">

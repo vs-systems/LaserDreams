@@ -24,6 +24,15 @@ $catStats = $pdo->query("
     HAVING total > 0
 ")->fetchAll();
 
+// 4. Productos por Marca (NUEVO - Anillo)
+$marcaStats = $pdo->query("
+    SELECT m.nombre, COUNT(p.id) as total
+    FROM marcas m
+    LEFT JOIN productos p ON m.id = p.marca_id AND p.activo = 1
+    GROUP BY m.id
+    HAVING total > 0
+")->fetchAll();
+
 $adminTitle = '📊 Informes y Estadísticas';
 require __DIR__ . '/../includes/header.php';
 ?>
@@ -57,6 +66,17 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </div>
 
+    <!-- Productos por Marca (NUEVO) -->
+    <div class="bg-white p-10 rounded-[40px] border border-gray-100 shadow-sm">
+        <h3 class="text-sm font-black uppercase tracking-widest text-gray-400 mb-8 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-pink-500"></span>
+            Productos por Marca
+        </h3>
+        <div class="aspect-square max-w-[300px] mx-auto">
+            <canvas id="chartMarcas"></canvas>
+        </div>
+    </div>
+
     <!-- Ranking de Visitas (Curva) -->
     <div class="bg-white p-10 rounded-[40px] border border-gray-100 shadow-sm lg:col-span-2">
         <h3 class="text-sm font-black uppercase tracking-widest text-gray-400 mb-8 flex items-center gap-2">
@@ -79,6 +99,26 @@ require __DIR__ . '/../includes/header.php';
             datasets: [{
                 data: <?= json_encode(array_column($catStats, 'total')) ?>,
                 backgroundColor: ['#F59E0B', '#10B981', '#3B82F6', '#8B5CF6', '#EC4899', '#6366F1'],
+                borderWidth: 0,
+                cutout: '70%'
+            }]
+        },
+        options: {
+            plugins: {
+                legend: { position: 'bottom', labels: { usePointStyle: true, font: { weight: 'bold', size: 10 } } }
+            }
+        }
+    });
+
+    // Gráfico de Marcas (Anillo)
+    const ctxMar = document.getElementById('chartMarcas').getContext('2d');
+    new Chart(ctxMar, {
+        type: 'doughnut',
+        data: {
+            labels: <?= json_encode(array_column($marcaStats, 'nombre')) ?>,
+            datasets: [{
+                data: <?= json_encode(array_column($marcaStats, 'total')) ?>,
+                backgroundColor: ['#EC4899', '#8B5CF6', '#3B82F6', '#10B981', '#F59E0B', '#EF4444'],
                 borderWidth: 0,
                 cutout: '70%'
             }]

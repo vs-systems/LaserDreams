@@ -60,6 +60,8 @@ $cotizacion_aplicada = $GLOBALS['cotizacion_aplicada'] ?? 0;
                         class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'marcas') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Marcas</a>
                     <a href="/admin/pedidos/index.php"
                         class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'pedidos') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Consultas</a>
+                    <a href="/admin/clientes/index.php"
+                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'clientes') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Clientes</a>
                     <a href="/admin/informes/index.php"
                         class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'informes') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Informes</a>
                     <a href="/admin/usuarios/index.php"

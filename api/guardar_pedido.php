@@ -19,6 +19,12 @@ $email = trim($input['email'] ?? 'vía WhatsApp');
 $carrito = $input['carrito'] ?? [];
 $total = (float) ($input['total'] ?? 0);
 
+$requiere_factura = !empty($input['requiere_factura']) ? 1 : 0;
+$cuit = trim($input['cuit'] ?? '');
+$razon_social = trim($input['razon_social'] ?? '');
+$tipo_factura = trim($input['tipo_factura'] ?? '');
+$iva_aplicado = (float) ($input['iva_aplicado'] ?? 0);
+
 if (empty($nombre) || empty($carrito)) {
     echo json_encode(['success' => false, 'error' => 'Datos incompletos']);
     exit;
@@ -26,8 +32,8 @@ if (empty($nombre) || empty($carrito)) {
 
 try {
     $stmt = $pdo->prepare("
-        INSERT INTO pedidos (nombre, localidad, email, carrito, total, estado)
-        VALUES (?, ?, ?, ?, ?, 'Nuevo')
+        INSERT INTO pedidos (nombre, localidad, email, carrito, total, requiere_factura, cuit, razon_social, tipo_factura, iva_aplicado, estado)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Nuevo')
     ");
 
     $stmt->execute([
@@ -35,7 +41,12 @@ try {
         $localidad,
         $email,
         json_encode($carrito),
-        $total
+        $total,
+        $requiere_factura,
+        $cuit,
+        $razon_social,
+        $tipo_factura,
+        $iva_aplicado
     ]);
 
     echo json_encode(['success' => true, 'id' => $pdo->lastInsertId()]);

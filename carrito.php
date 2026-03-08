@@ -18,9 +18,25 @@ require __DIR__ . '/includes/header.php';
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                 <div>
                     <div id="carrito-total" class="text-3xl font-black text-gray-900 mb-2"></div>
-                    <div class="space-y-1 text-sm font-bold text-gray-500 uppercase tracking-widest mt-2">
-                        <p>* Los valores no incluyen IVA.</p>
-                        <p>⚠️ NO INCLUYE FLETES</p>
+                    <div id="carrito-iva-info" class="text-xl font-bold text-gray-500 mb-2 hidden">
+                        + IVA 21%: <span id="carrito-iva-monto" class="text-gray-900"></span><br>
+                        <span class="text-sm">Total con IVA: <span id="carrito-total-iva"
+                                class="text-gray-900"></span></span>
+                    </div>
+
+                    <div class="mt-4 mb-4">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox" id="chk-requiere-factura"
+                                class="w-5 h-5 rounded border-gray-300 text-violet-600 focus:ring-violet-500 transition-colors cursor-pointer">
+                            <span
+                                class="text-sm font-bold text-gray-700 group-hover:text-violet-600 transition-colors">Requiere
+                                Facturación (+21% IVA)</span>
+                        </label>
+                    </div>
+
+                    <div class="space-y-1 text-sm font-bold text-gray-500 uppercase tracking-widest mt-2 border-t pt-4">
+                        <p id="txt-incluye-iva">* Los valores no incluyen IVA.</p>
+                        <p>⚠️ Los envíos corren por cuenta y orden del cliente</p>
                     </div>
                 </div>
 
@@ -53,6 +69,9 @@ require __DIR__ . '/includes/header.php';
                 class="absolute top-6 right-6 text-gray-400 hover:text-white transition-colors">✕</button>
             <h2 class="text-2xl font-black tracking-tight mb-2">Último paso</h2>
             <p class="text-gray-400 text-sm font-medium">Completa tus datos para enviarte la cotización oficial.</p>
+            <p id="txt-modal-facturacion"
+                class="text-violet-300 text-xs font-bold mt-2 uppercase tracking-widest hidden">🗒️ Requiere Facturación
+            </p>
         </div>
 
         <form id="form-checkout" class="p-8 space-y-6">
@@ -66,6 +85,35 @@ require __DIR__ . '/includes/header.php';
                 <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Localidad / Ciudad</label>
                 <input type="text" id="checkout-localidad" required placeholder="Ej: Mar del Plata"
                     class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-2 border-transparent focus:border-violet-500 focus:bg-white transition-all outline-none font-bold text-gray-900">
+            </div>
+
+            <div id="campos-facturacion" class="hidden space-y-6 pt-4 border-t border-gray-100">
+                <div class="space-y-2">
+                    <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Razón Social</label>
+                    <input type="text" id="checkout-razon-social" placeholder="Ej: Empresa S.A."
+                        class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-2 border-transparent focus:border-violet-500 focus:bg-white transition-all outline-none font-bold text-gray-900">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">CUIT</label>
+                    <input type="text" id="checkout-cuit" placeholder="Ej: 30-12345678-9"
+                        class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-2 border-transparent focus:border-violet-500 focus:bg-white transition-all outline-none font-bold text-gray-900">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Email
+                        Facturación</label>
+                    <input type="email" id="checkout-email" placeholder="Ej: admin@empresa.com"
+                        class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-2 border-transparent focus:border-violet-500 focus:bg-white transition-all outline-none font-bold text-gray-900">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Tipo de
+                        Factura</label>
+                    <select id="checkout-tipo-factura"
+                        class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-2 border-transparent focus:border-violet-500 focus:bg-white transition-all outline-none font-bold text-gray-900 appearance-none cursor-pointer">
+                        <option value="A">Factura A</option>
+                        <option value="B">Factura B</option>
+                        <option value="C">Factura C</option>
+                    </select>
+                </div>
             </div>
 
             <button type="submit" id="btn-finalizar"
@@ -99,18 +147,36 @@ require __DIR__ . '/includes/header.php';
         const nombre = document.getElementById('checkout-nombre').value.trim();
         const localidad = document.getElementById('checkout-localidad').value.trim();
         const carritoData = window.MGCarrito.get();
+        
+        const chkFactura = document.getElementById('chk-requiere-factura').checked;
+        const cuit = document.getElementById('checkout-cuit').value.trim();
+        const razonSocial = document.getElementById('checkout-razon-social').value.trim();
+        const emailFactura = document.getElementById('checkout-email').value.trim();
+        const tipoFactura = document.getElementById('checkout-tipo-factura').value;
 
         if (!nombre || !localidad) return alert('Por favor, completa tu nombre y localidad.');
+        
+        if (chkFactura && (!cuit || !razonSocial)) {
+            return alert('Si requiere factura, debe completar el CUIT y la Razón Social.');
+        }
 
         btn.disabled = true;
         btn.innerHTML = '<span>⏳</span> Procesando...';
 
         try {
             // Recalcular total del carrito por seguridad
-            let totalVal = 0;
+            let subtotalVal = 0;
             carritoData.items.forEach(item => {
-                totalVal += (parseFloat(item.precio) || 0) * (parseInt(item.cantidad) || 1);
+                subtotalVal += (parseFloat(item.precio) || 0) * (parseInt(item.cantidad) || 1);
             });
+            
+            let ivaVal = 0;
+            let totalVal = subtotalVal;
+            
+            if (chkFactura) {
+                ivaVal = subtotalVal * 0.21;
+                totalVal = subtotalVal + ivaVal;
+            }
 
             // 1. Guardar en Base de Datos vía API
             const response = await fetch('/api/guardar_pedido.php', {
@@ -119,9 +185,14 @@ require __DIR__ . '/includes/header.php';
                 body: JSON.stringify({
                     nombre,
                     localidad,
-                    email: 'vía WhatsApp',
+                    email: chkFactura && emailFactura ? emailFactura : 'vía WhatsApp',
                     carrito: carritoData.items,
-                    total: totalVal
+                    total: totalVal,
+                    requiere_factura: chkFactura,
+                    cuit,
+                    razon_social: razonSocial,
+                    tipo_factura: tipoFactura,
+                    iva_aplicado: ivaVal
                 })
             });
 
@@ -133,18 +204,35 @@ require __DIR__ . '/includes/header.php';
 
             // 2. Generar mensaje de WhatsApp - Normalizando caracteres
             let mensaje = `Hola! 👋 Soy *${nombre}* de *${localidad}* y me interesa una cotizacion por:%0A%0A`;
+            
+            if (chkFactura) {
+                mensaje += `*📋 DATOS FACTURACIÓN (${tipoFactura})*%0A`;
+                mensaje += `Razón Social: ${razonSocial}%0A`;
+                mensaje += `CUIT: ${cuit}%0A`;
+                if (emailFactura) mensaje += `Email: ${emailFactura}%0A`;
+                mensaje += `%0A`;
+            }
 
             carritoData.items.forEach(item => {
                 const precioTexto = item.precio > 0 ? `$${parseFloat(item.precio).toLocaleString('es-AR')}` : 'Consultar';
                 mensaje += `🛋️ *${item.titulo}*%0A`;
                 mensaje += `   - Cantidad: ${item.cantidad}%0A`;
-                mensaje += `   - Color: ${item.color || 'A confirmar'}%0A`;
-                mensaje += `   - Precio: ${precioTexto}%0A`;
+                if(item.tipo_bulto) mensaje += `   - Embalaje: ${item.tipo_bulto}%0A`;
+                mensaje += `   - Precio unit: ${precioTexto}%0A`;
                 mensaje += `   - Link: ${item.url}%0A%0A`;
             });
 
+            if (chkFactura) {
+                mensaje += `*Subtotal:* $${subtotalVal.toLocaleString('es-AR')}%0A`;
+                mensaje += `*IVA 21%: * $${ivaVal.toLocaleString('es-AR')}%0A`;
+            }
+            
             mensaje += `💰 *TOTAL APROXIMADO: $${totalVal.toLocaleString('es-AR')}*%0A`;
-            mensaje += `%0A_Precios sujetos a cambios. No incluyen IVA._`;
+            if(chkFactura) {
+                mensaje += `%0A_El total incluye IVA._`;
+            } else {
+                mensaje += `%0A_Precios sujetos a cambios. No incluyen IVA._`;
+            }
 
             // 3. Cerrar modal y Redirigir
             cerrarCheckout();
@@ -185,7 +273,7 @@ require __DIR__ . '/includes/header.php';
 
         carrito.items.forEach(item => {
             const subtotal = item.precio * item.cantidad;
-            const colorText = item.color ? `Color: ${item.color}` : 'Color: A confirmar';
+            const embalajeText = item.tipo_bulto ? `Embalaje: ${item.tipo_bulto}` : '';
 
             const itemDiv = document.createElement('div');
             itemDiv.className = 'flex flex-col p-6 border-b border-gray-50 last:border-0 hover:bg-gray-50/50 transition-colors';
@@ -197,7 +285,7 @@ require __DIR__ . '/includes/header.php';
                 
                 <div class="flex-grow">
                     <h3 class="font-bold text-gray-900 text-lg mb-1">${item.titulo}</h3>
-                    <p class="text-gray-400 text-sm font-medium mb-1">${colorText}</p>
+                    <p class="text-gray-400 text-sm font-medium mb-1">${embalajeText}</p>
                     <p class="text-violet-600 font-bold">$${item.precio.toLocaleString('es-AR')}</p>
                 </div>
 
@@ -220,7 +308,44 @@ require __DIR__ . '/includes/header.php';
             contenedor.appendChild(itemDiv);
         });
 
-        totalEl.innerHTML = `Total: <span class="text-violet-600">$${carrito.total.toLocaleString('es-AR')}</span>`;
+        // Actualizar visualización del IVA
+        const ivaInfo = document.getElementById('carrito-iva-info');
+        const txtIncluye = document.getElementById('txt-incluye-iva');
+        const chkFactura = document.getElementById('chk-requiere-factura');
+        const camposFac = document.getElementById('campos-facturacion');
+        const modalFac = document.getElementById('txt-modal-facturacion');
+        
+        const updateIvaView = () => {
+            if (chkFactura.checked) {
+                const iva = carrito.total * 0.21;
+                const totalConIva = carrito.total + iva;
+                
+                document.getElementById('carrito-iva-monto').textContent = '$' + iva.toLocaleString('es-AR');
+                document.getElementById('carrito-total-iva').textContent = '$' + totalConIva.toLocaleString('es-AR');
+                ivaInfo.classList.remove('hidden');
+                txtIncluye.classList.add('hidden');
+                camposFac.classList.remove('hidden');
+                modalFac.classList.remove('hidden');
+                totalEl.innerHTML = `Subtotal: <span class="text-violet-600">$${carrito.total.toLocaleString('es-AR')}</span>`;
+                
+                // Hacer campos requeridos
+                document.getElementById('checkout-cuit').required = true;
+                document.getElementById('checkout-razon-social').required = true;
+            } else {
+                ivaInfo.classList.add('hidden');
+                txtIncluye.classList.remove('hidden');
+                camposFac.classList.add('hidden');
+                modalFac.classList.add('hidden');
+                totalEl.innerHTML = `Total: <span class="text-violet-600">$${carrito.total.toLocaleString('es-AR')}</span>`;
+                
+                // Quitar requerido
+                document.getElementById('checkout-cuit').required = false;
+                document.getElementById('checkout-razon-social').required = false;
+            }
+        };
+        
+        chkFactura.addEventListener('change', updateIvaView);
+        updateIvaView(); // init
     }
 
     document.addEventListener('DOMContentLoaded', renderCarrito);
