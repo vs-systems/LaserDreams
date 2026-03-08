@@ -124,10 +124,20 @@ $precio_final = $subtotal + $recargo;
         <div class="lg:sticky lg:top-32">
             <div class="mb-6">
                 <div class="text-[10px] text-gray-400 font-black uppercase tracking-widest mb-2">COD:
-                    <?= e($p['codigo']) ?></div>
-                <h1 class="text-4xl font-black text-gray-900 mb-4 leading-tight">
+                    <?= e($p['codigo']) ?>
+                </div>
+                <h1 class="text-4xl font-black text-gray-900 mb-2 leading-tight">
                     <?= e(ucwords(strtolower($p['titulo']))) ?>
                 </h1>
+
+                <?php if (!empty($p['marca'])): ?>
+                    <div class="mb-4">
+                        <span
+                            class="bg-gray-100 text-gray-800 text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest border border-gray-200">
+                            <?= e($p['marca']) ?>
+                        </span>
+                    </div>
+                <?php endif; ?>
 
                 <div class="mb-2">
                     <span class="text-xs font-black text-gray-400 uppercase tracking-widest">USD

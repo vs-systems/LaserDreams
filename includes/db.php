@@ -12,8 +12,8 @@ try {
         ]
     );
 } catch (PDOException $e) {
-    http_response_code(500);
-    die('Error de conexión a la base de datos');
+    // Return a visible error for debugging if needed, but safe for production
+    die('Error de conexión a la base de datos. Por favor, verifica las credenciales en config.php. Detalles ocultos por seguridad.');
 }
 
 /**
@@ -50,8 +50,18 @@ function get_cotizacion_dolar()
     if (time() - $last_time > 1800) {
         try {
             $api_url = "https://dolarapi.com/v1/dolares/blue";
-            $json = @file_get_contents($api_url);
-            if ($json) {
+
+            // Use cURL instead of file_get_contents for better compatibility on shared hosting
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $api_url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 5); // 5 seconds timeout
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            $json = curl_exec($ch);
+            $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+
+            if ($http_code == 200 && $json) {
                 $data = json_decode($json, true);
                 if (isset($data['venta'])) {
                     $current_val = (float) $data['venta'];
@@ -60,6 +70,7 @@ function get_cotizacion_dolar()
                 }
             }
         } catch (Exception $e) {
+            // Silently fail and use last known value
         }
     }
 

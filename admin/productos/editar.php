@@ -70,6 +70,13 @@ $cotizacion_js = $GLOBALS['cotizacion_aplicada'] ?? 0;
             </div>
 
             <div>
+                <label class="block text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-3">Marca</label>
+                <input type="text" name="marca" value="<?= e($producto['marca'] ?? '') ?>"
+                    placeholder="Ej. BEAM, SANYI, genérico..."
+                    class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-transparent focus:border-violet-500 focus:ring-2 focus:ring-violet-500/10 transition-all outline-none font-black text-gray-900 text-lg">
+            </div>
+
+            <div>
                 <label class="block text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-3">Descripción
                     Larga Profesional</label>
                 <textarea name="descripcion" rows="8"

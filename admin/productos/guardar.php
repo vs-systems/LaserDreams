@@ -15,6 +15,7 @@ try {
 
     $codigo = strtoupper(trim($_POST['codigo'] ?? ''));
     $titulo = trim($_POST['titulo'] ?? '');
+    $marca = trim($_POST['marca'] ?? '');
     $descripcion = trim($_POST['descripcion'] ?? '');
 
     // Convert to null if empty so foreign key constraint doesn't fail with 0 if no category 0 exists
@@ -38,14 +39,15 @@ try {
 
     $stmt = $pdo->prepare("
         INSERT INTO productos
-        (codigo, titulo, descripcion, categoria_id, activo, es_oferta, es_nuevo, es_destacado,
+        (codigo, titulo, marca, descripcion, categoria_id, activo, es_oferta, es_nuevo, es_destacado,
          tipo_bulto, unidades_por_bulto, costo_compra, margen_porcentaje, precio_venta_usd)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ");
 
     $stmt->execute([
         $codigo,
         $titulo,
+        $marca,
         $descripcion,
         $categoria_id,
         $activo,

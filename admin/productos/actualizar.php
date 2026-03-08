@@ -14,6 +14,7 @@ if ($id <= 0) {
 
 $codigo = strtoupper(trim($_POST['codigo'] ?? ''));
 $titulo = trim($_POST['titulo'] ?? '');
+$marca = trim($_POST['marca'] ?? '');
 $descripcion = trim($_POST['descripcion'] ?? '');
 
 $categoria_id = !empty($_POST['categoria_id']) ? (int) $_POST['categoria_id'] : null;
@@ -37,6 +38,7 @@ try {
         UPDATE productos
         SET codigo = ?,
             titulo = ?,
+            marca = ?,
             descripcion = ?,
             categoria_id = ?,
             activo = ?,
@@ -54,6 +56,7 @@ try {
     $stmt->execute([
         $codigo,
         $titulo,
+        $marca,
         $descripcion,
         $categoria_id,
         $activo,
