@@ -73,6 +73,16 @@ $precio_final = $subtotal + $recargo;
                 <?php endif; ?>
 
                 <div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+                    <?php if (isset($p['en_stock']) && empty($p['en_stock'])): ?>
+                        <span
+                            class="bg-gray-800 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm">Sin
+                            Stock</span>
+                    <?php else: ?>
+                        <span
+                            class="bg-green-600 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm">En
+                            Stock</span>
+                    <?php endif; ?>
+
                     <?php if (!empty($p['es_nuevo'])): ?>
                         <span
                             class="bg-blue-600 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm">Nuevo
@@ -159,14 +169,15 @@ $precio_final = $subtotal + $recargo;
                             📄 Manual Técnico
                         </a>
                     <?php endif; ?>
-                    <button id="btnAddCart"
-                        class="<?= !empty($p['manual_tecnico']) ? 'w-1/2' : 'w-full' ?> bg-red-600 text-white py-4 rounded-xl font-bold text-sm hover:bg-red-500 transition-all transform active:scale-95 shadow-lg flex items-center justify-center gap-2 group"
+                    <button id="btnAddCart" <?= (isset($p['en_stock']) && empty($p['en_stock'])) ? 'disabled' : '' ?>
+                        class="<?= !empty($p['manual_tecnico']) ? 'w-1/2' : 'w-full' ?> bg-red-600 text-white py-4 rounded-xl font-bold text-sm hover:bg-red-500 transition-all transform active:scale-95 shadow-lg flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
                         data-id="<?= (int) $p['id'] ?>" data-titulo="<?= e(ucwords(strtolower($p['titulo']))) ?>"
                         data-precio="<?= $precio_final ?>"
                         data-imagen="<?= !empty($p['foto_principal']) ? '/uploads/productos/' . e($p['foto_principal']) : '' ?>"
                         data-url="https://laserdreams.com.ar/producto.php?id=<?= (int) $p['id'] ?>"
                         onclick="addToCartProduct(this)">
-                        <span class="text-lg group-hover:rotate-12 transition-transform">🛒</span> Agregar al carrito
+                        <span class="text-lg group-hover:rotate-12 transition-transform">🛒</span>
+                        <?= (isset($p['en_stock']) && empty($p['en_stock'])) ? 'Sin Stock' : 'Agregar al carrito' ?>
                     </button>
                 </div>
                 <p

@@ -27,6 +27,7 @@ $margen_porcentaje = (float) ($_POST['margen_porcentaje'] ?? 0);
 $precio_venta_usd = (float) ($_POST['precio_venta_usd'] ?? 0);
 
 $activo = isset($_POST['activo']) ? 1 : 0;
+$en_stock = isset($_POST['en_stock']) ? 1 : 0;
 $oferta = isset($_POST['es_oferta']) ? 1 : 0;
 $nuevo = isset($_POST['es_nuevo']) ? 1 : 0;
 $destacado = isset($_POST['es_destacado']) ? 1 : 0;
@@ -57,6 +58,7 @@ try {
             descripcion = ?,
             categoria_id = ?,
             activo = ?,
+            en_stock = ?,
             es_oferta = ?,
             es_nuevo = ?,
             es_destacado = ?,
@@ -76,6 +78,7 @@ try {
         $descripcion,
         $categoria_id,
         $activo,
+        $en_stock,
         $oferta,
         $nuevo,
         $destacado,

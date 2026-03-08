@@ -160,8 +160,8 @@ $categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre")->
 
         <?php foreach ($productos as $p): ?>
 
-            <a href="/producto.php?id=<?= (int) $p['id'] ?>"
-                class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
+            <div
+                class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full <?= empty($p['en_stock']) && isset($p['en_stock']) ? 'opacity-70 grayscale-[50%]' : '' ?>">
 
                 <div class="aspect-[4/5] overflow-hidden relative">
                     <?php if (!empty($p['imagen_principal'])): ?>
@@ -176,6 +176,16 @@ $categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre")->
 
                 <div class="p-6 flex flex-col flex-grow">
                     <div class="flex flex-wrap gap-1 mb-2">
+                        <?php if (isset($p['en_stock']) && empty($p['en_stock'])): ?>
+                            <span
+                                class="bg-gray-800 text-white text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded shadow-sm">Sin
+                                Stock</span>
+                        <?php else: ?>
+                            <span
+                                class="bg-green-600 text-white text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded shadow-sm">En
+                                Stock</span>
+                        <?php endif; ?>
+
                         <?php if (!empty($p['es_novedad'])): ?>
                             <span
                                 class="bg-blue-600 text-white text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded shadow-sm">Nuevo</span>
@@ -210,19 +220,26 @@ $categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre")->
                             $<?= number_format($precio_final, 0, ',', '.') ?>
                         </div>
 
-                        <button
-                            class="w-full bg-gray-900 text-white py-3 rounded-2xl font-bold hover:bg-violet-500 hover:text-black transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2"
-                            onclick="event.preventDefault(); event.stopPropagation(); addToCartFromButton(this);"
-                            data-id="<?= (int) $p['id'] ?>" data-titulo="<?= e($p['titulo']) ?>"
-                            data-precio="<?= $precio_final ?>"
-                            data-imagen="<?= !empty($p['imagen_principal']) ? '/uploads/productos/' . $p['imagen_principal'] : '' ?>"
-                            data-url="https://laserdreams.com.ar/producto.php?id=<?= (int) $p['id'] ?>">
-                            <span>⚡</span> Agregar al carrito
-                        </button>
+                        <div class="flex gap-2">
+                            <a href="/producto.php?id=<?= (int) $p['id'] ?>"
+                                class="w-1/2 bg-red-900 text-white py-2.5 rounded-xl font-bold hover:bg-red-950 transition-all text-xs flex items-center justify-center shadow-md">
+                                + Info
+                            </a>
+                            <button
+                                class="w-1/2 bg-red-600 text-white py-2.5 rounded-xl font-bold hover:bg-red-500 transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-1 text-xs shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+                                <?= (isset($p['en_stock']) && empty($p['en_stock'])) ? 'disabled' : '' ?>
+                                onclick="event.preventDefault(); event.stopPropagation(); addToCartFromButton(this);"
+                                data-id="<?= (int) $p['id'] ?>" data-titulo="<?= e($p['titulo']) ?>"
+                                data-precio="<?= $precio_final ?>"
+                                data-imagen="<?= !empty($p['imagen_principal']) ? '/uploads/productos/' . $p['imagen_principal'] : '' ?>"
+                                data-url="https://laserdreams.com.ar/producto.php?id=<?= (int) $p['id'] ?>">
+                                🛒 Agregar
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-            </a>
+            </div>
 
         <?php endforeach; ?>
 

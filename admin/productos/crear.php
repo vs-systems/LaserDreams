@@ -156,6 +156,13 @@ $cotizacion_js = $GLOBALS['cotizacion_aplicada'] ?? 0;
                             Activo (Visible)</span>
                     </label>
                     <label class="flex items-center gap-4 cursor-pointer group">
+                        <input type="checkbox" name="en_stock" value="1" checked
+                            class="w-6 h-6 rounded-lg border-2 border-gray-100 checked:bg-emerald-500 checked:border-emerald-500 transition-all outline-none appearance-none cursor-pointer">
+                        <span
+                            class="text-xs font-black uppercase tracking-widest text-gray-600 group-hover:text-emerald-500 transition-colors">📦
+                            En Stock</span>
+                    </label>
+                    <label class="flex items-center gap-4 cursor-pointer group">
                         <input type="checkbox" name="es_oferta" value="1"
                             class="w-6 h-6 rounded-lg border-2 border-gray-100 checked:bg-violet-500 checked:border-violet-500 transition-all outline-none appearance-none cursor-pointer">
                         <span

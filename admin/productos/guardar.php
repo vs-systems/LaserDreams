@@ -29,6 +29,7 @@ try {
     $precio_venta_usd = (float) ($_POST['precio_venta_usd'] ?? 0);
 
     $activo = isset($_POST['activo']) ? 1 : 0;
+    $en_stock = isset($_POST['en_stock']) ? 1 : 0;
     $oferta = isset($_POST['es_oferta']) ? 1 : 0;
     $nuevo = isset($_POST['es_nuevo']) ? 1 : 0;
     $destacado = isset($_POST['es_destacado']) ? 1 : 0;
@@ -51,9 +52,9 @@ try {
 
     $stmt = $pdo->prepare("
         INSERT INTO productos
-        (codigo, titulo, marca, descripcion, categoria_id, activo, es_oferta, es_nuevo, es_destacado,
+        (codigo, titulo, marca, descripcion, categoria_id, activo, en_stock, es_oferta, es_nuevo, es_destacado,
          tipo_bulto, unidades_por_bulto, costo_compra, margen_porcentaje, precio_venta_usd, manual_tecnico)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ");
 
     $stmt->execute([
@@ -63,6 +64,7 @@ try {
         $descripcion,
         $categoria_id,
         $activo,
+        $en_stock,
         $oferta,
         $nuevo,
         $destacado,
