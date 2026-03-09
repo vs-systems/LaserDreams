@@ -4,9 +4,13 @@ $titulo_pagina = 'Venta Mayorista';
 require __DIR__ . '/includes/db.php';
 require __DIR__ . '/includes/header.php';
 
-// Obtener lista de productos para los checkboxes
-$stmt = $pdo->query("SELECT id, titulo, codigo FROM productos WHERE activo = 1 ORDER BY titulo ASC");
+// Obtener lista de productos para los checkboxes con fotos y datos para filtros
+$stmt = $pdo->query("SELECT id, titulo, codigo, foto_principal, categoria_id, marca_id FROM productos WHERE activo = 1 ORDER BY titulo ASC");
 $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// Obtener categorías y marcas para los filtros
+$categorias = $pdo->query("SELECT id, nombre FROM categorias ORDER BY nombre ASC")->fetchAll(PDO::FETCH_ASSOC);
+$marcas = $pdo->query("SELECT id, nombre FROM marcas ORDER BY nombre ASC")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <div class="max-w-4xl mx-auto px-4 py-12">
@@ -116,16 +120,44 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <!-- Productos de Interés -->
             <div>
                 <h3 class="text-lg font-black text-gray-900 border-b pb-2 mb-4">Productos de Interés</h3>
-                <p class="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Selecciona los artículos
-                    que te interesan (Opcional)</p>
+                <p class="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Filtrá y selecciona los
+                    artículos que te interesan (Opcional)</p>
 
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-80 overflow-y-auto p-4 border rounded-2xl bg-gray-50">
-                    <?php foreach ($productos as $p): ?>
-                        <label class="flex items-start gap-3 cursor-pointer group">
+                <!-- Filtros -->
+                <div class="flex flex-col sm:flex-row gap-3 mb-4">
+                    <select id="filtro-categoria"
+                        class="flex-1 px-4 py-2 rounded-xl bg-gray-50 border-2 border-transparent focus:border-violet-500 transition-all outline-none font-bold text-gray-900 text-sm">
+                        <option value="">Todas las Categorías</option>
+                        <?php foreach ($categorias as $c): ?>
+                            <option value="<?= $c['id'] ?>"><?= htmlspecialchars($c['nombre']) ?></option>
+                        <?php endforeach; ?>
+                    </select>
+
+                    <select id="filtro-marca"
+                        class="flex-1 px-4 py-2 rounded-xl bg-gray-50 border-2 border-transparent focus:border-violet-500 transition-all outline-none font-bold text-gray-900 text-sm">
+                        <option value="">Todas las Marcas</option>
+                        <?php foreach ($marcas as $m): ?>
+                            <option value="<?= $m['id'] ?>"><?= htmlspecialchars($m['nombre']) ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+
+                <div id="lista-productos"
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-96 overflow-y-auto p-4 border rounded-2xl bg-gray-50">
+                    <?php foreach ($productos as $p):
+                        $img = !empty($p['foto_principal']) ? '/uploads/' . $p['foto_principal'] : '/assets/img/logo.png';
+                        ?>
+                        <label
+                            class="item-producto flex items-center gap-3 cursor-pointer group p-2 border border-transparent hover:border-violet-200 rounded-xl transition-all"
+                            data-categoria="<?= $p['categoria_id'] ?>" data-marca="<?= $p['marca_id'] ?>">
                             <input type="checkbox" name="productos_interes[]" value="<?= htmlspecialchars($p['id']) ?>"
-                                class="w-4 h-4 mt-1 rounded border-gray-300 text-violet-600 focus:ring-violet-500">
-                            <span class="text-xs font-bold text-gray-700 group-hover:text-violet-600 leading-tight">
+                                class="w-5 h-5 rounded border-gray-300 text-violet-600 focus:ring-violet-500 shrink-0">
+
+                            <img src="<?= htmlspecialchars($img) ?>" alt=""
+                                class="w-12 h-12 object-cover rounded-lg shadow-sm shrink-0 bg-white">
+
+                            <span
+                                class="text-[11px] font-bold text-gray-700 group-hover:text-violet-600 leading-tight line-clamp-2">
                                 <?= htmlspecialchars($p['titulo']) ?>
                             </span>
                         </label>
@@ -200,6 +232,34 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             }
         });
     });
+
+    // Lógica de Filtros Combinados (Categoría y Marca)
+    const filtroCat = document.getElementById('filtro-categoria');
+    const filtroMarca = document.getElementById('filtro-marca');
+    const itemsProducto = document.querySelectorAll('.item-producto');
+
+    function aplicarFiltros() {
+        const catValue = filtroCat.value;
+        const marcaValue = filtroMarca.value;
+
+        itemsProducto.forEach(item => {
+            const itemCat = item.getAttribute('data-categoria');
+            const itemMarca = item.getAttribute('data-marca');
+
+            let matchCat = (catValue === '' || itemCat === catValue);
+            let matchMarca = (marcaValue === '' || itemMarca === marcaValue);
+
+            if (matchCat && matchMarca) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    filtroCat.addEventListener('change', aplicarFiltros);
+    filtroMarca.addEventListener('change', aplicarFiltros);
+
 </script>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>

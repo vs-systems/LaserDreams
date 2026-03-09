@@ -20,7 +20,7 @@ $productos_ids = json_decode($solicitud['productos_interes'], true) ?: [];
 $productos = [];
 if (!empty($productos_ids)) {
     $in = str_repeat('?,', count($productos_ids) - 1) . '?';
-    $sql = "SELECT titulo, codigo FROM productos WHERE id IN ($in)";
+    $sql = "SELECT titulo, codigo, foto_principal FROM productos WHERE id IN ($in)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute($productos_ids);
     $productos = $stmt->fetchAll();
@@ -125,13 +125,13 @@ require __DIR__ . '/../includes/header.php';
                 </div>
             <?php else: ?>
                 <div class="space-y-4">
-                    <?php foreach ($productos as $item): ?>
+                    <?php foreach ($productos as $item):
+                        $img = !empty($item['foto_principal']) ? '/uploads/' . $item['foto_principal'] : '/assets/img/logo.png';
+                        ?>
                         <div
                             class="flex items-center gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50 transition-colors">
-                            <div
-                                class="w-10 h-10 bg-violet-100 text-violet-600 rounded-lg flex items-center justify-center font-black text-lg">
-                                #
-                            </div>
+                            <img src="<?= htmlspecialchars($img) ?>" alt=""
+                                class="w-12 h-12 object-cover rounded-lg bg-gray-100 shadow-sm shrink-0">
                             <div class="flex-grow">
                                 <h4 class="font-bold text-gray-900 line-clamp-1">
                                     <?= htmlspecialchars($item['titulo']) ?>
