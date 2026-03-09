@@ -37,12 +37,20 @@ class MyPDF extends TCPDF
 
     public function Footer()
     {
-        $this->SetY(-18);
-        $this->SetFont('helvetica', 'I', 8);
-        $this->SetTextColor(100, 100, 100);
-        $this->Cell(0, 5, '* Los valores expresados son netos. En caso de requerir comprobante fiscal, adicionar el 21% correspondiente a impuestos.', 0, 1, 'C', 0, '', 0, false, 'T', 'M');
-        $this->SetTextColor(0, 0, 0);
-        $this->Cell(0, 8, 'Página ' . $this->getAliasNumPage() . '/' . $this->getAliasNbPages() . ' | Laserdreams - Equipamiento técnico e iluminación', 0, false, 'C', 0, '', 0, false, 'T', 'M');
+        $this->SetY(-22);
+        $this->SetFont('helvetica', 'I', 7);
+        $this->SetTextColor(80, 80, 80);
+        $this->Cell(0, 4, '* Los valores expresados son netos. En caso de requerir comprobante fiscal, adicionar el 21%.', 0, 1, 'C', 0, '', 0, false, 'T', 'M');
+        $this->Cell(0, 4, '* El precio varia a diario conforme la cotizacion del dolar al dia de gestionar su pago.', 0, 1, 'C', 0, '', 0, false, 'T', 'M');
+
+        $this->SetFont('helvetica', '', 7);
+        $html = '<a href="https://www.laserdreams.com.ar" style="color:#0000ff;text-decoration:none;">www.laserdreams.com.ar</a> / <a href="mailto:somos@laserdreams.com.ar" style="color:#0000ff;text-decoration:none;">somos@laserdreams.com.ar</a>';
+        $this->writeHTMLCell(0, 4, '', '', $html, 0, 1, 0, true, 'C', true);
+
+        $this->SetFont('helvetica', 'B', 7);
+        $this->SetTextColor(50, 50, 50);
+        $this->Cell(100, 4, '2026 Laserdreams by Javier Gozzi', 0, false, 'L', 0, '', 0, false, 'T', 'M');
+        $this->Cell(0, 4, 'Página ' . $this->getAliasNumPage() . '/' . $this->getAliasNbPages(), 0, false, 'R', 0, '', 0, false, 'T', 'M');
     }
 }
 

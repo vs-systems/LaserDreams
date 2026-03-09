@@ -46,20 +46,11 @@ $cotizacion_aplicada = $GLOBALS['cotizacion_aplicada'] ?? 0;
                 <nav class="hidden lg:flex items-center gap-6">
                     <a href="/admin/dashboard.php"
                         class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'dashboard') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Inicio</a>
-                    <a href="/admin/productos/index.php"
-                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'productos') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Productos</a>
-                    <a href="/admin/categorias/index.php"
-                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'categorias') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Categorías</a>
-                    <a href="/admin/marcas/index.php"
-                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'marcas') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Marcas</a>
                     <a href="/admin/pedidos/index.php"
-                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'pedidos') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Consultas</a>
-                    <a href="/admin/clientes/index.php"
-                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'clientes') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Clientes</a>
-                    <a href="/admin/informes/index.php"
-                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'informes') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Informes</a>
-                    <a href="/admin/usuarios/index.php"
-                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'usuarios') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Usuarios</a>
+                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'pedidos') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Consultas
+                        Clientes</a>
+                    <a href="/admin/mayoristas/index.php"
+                        class="text-xs font-black uppercase tracking-widest <?= str_contains($_SERVER['PHP_SELF'], 'mayoristas') ? 'text-violet-500' : 'text-gray-400 hover:text-white' ?>">Mayoristas</a>
                 </nav>
                 <div class="h-6 w-px bg-white/10 hidden lg:block"></div>
                 <a href="/" target="_blank"

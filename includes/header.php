@@ -59,6 +59,9 @@ if (!defined('HEADER_INCLUDED')) {
                     <a href="/assets/img/Bigdipper_MDQ.pdf" target="_blank"
                         class="hover:text-red-600 transition-colors py-2 border-b-2 border-transparent hover:border-red-600">Catálogo
                         Bigdipper</a>
+                    <a href="/mayorista.php"
+                        class="text-violet-500 hover:text-violet-400 font-bold transition-colors py-2 border-b-2 border-transparent hover:border-violet-500">Venta
+                        Mayorista</a>
                 </nav>
 
                 <div class="flex items-center gap-6">

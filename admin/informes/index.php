@@ -6,6 +6,21 @@ $totalProductos = $pdo->query("SELECT COUNT(*) FROM productos WHERE activo = 1")
 $totalConsultas = $pdo->query("SELECT COUNT(*) FROM pedidos")->fetchColumn();
 $pedidosConfirmados = $pdo->query("SELECT COUNT(*) FROM pedidos WHERE estado = 'Confirmado'")->fetchColumn();
 $totalVisitas = $pdo->query("SELECT SUM(visitas) FROM productos")->fetchColumn() ?: 0;
+
+// Nuevas Metricas CRM y Mayoristas
+try {
+    $totalMayoristasPendientes = $pdo->query("SELECT COUNT(*) FROM solicitudes_mayoristas WHERE estado = 'Pendiente'")->fetchColumn();
+    $totalDescargasLista = $pdo->query("SELECT COUNT(*) FROM descargas_listas")->fetchColumn();
+    $pedidosPendientes = $pdo->query("SELECT COUNT(*) FROM pedidos WHERE estado = 'Nuevo'")->fetchColumn();
+    $ultimasDescargas = $pdo->query("SELECT * FROM descargas_listas ORDER BY fecha DESC LIMIT 5")->fetchAll();
+} catch (PDOException $e) {
+    // If table doesn't exist yet/migration not run
+    $totalMayoristasPendientes = 0;
+    $totalDescargasLista = 0;
+    $pedidosPendientes = 0;
+    $ultimasDescargas = [];
+}
+
 $productosVisitas = $pdo->query("SELECT titulo, visitas FROM productos WHERE activo = 1 ORDER BY visitas DESC LIMIT 5")->fetchAll();
 
 // 2. Estados de Pedido (Anillo/Doughnut)
@@ -66,6 +81,83 @@ $cot_bigdipper = $GLOBALS['dolar_oficial_base'] ?? 0;
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <!-- ... (Grid de métricas se mantiene igual) ... -->
+
+<!-- CRM Box y Descargas de Lista -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+    <div class="bg-white p-10 rounded-[40px] border border-gray-100 shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-full -mr-16 -mt-16"></div>
+        <h3 class="text-xl font-black text-gray-900 mb-6 flex items-center gap-2">
+            CRM: Control de Atención
+        </h3>
+        <div class="space-y-4">
+            <div
+                class="flex justify-between items-center p-4 bg-gray-50 rounded-2xl border <?= $pedidosPendientes > 0 ? 'border-red-200' : 'border-gray-100' ?>">
+                <span class="text-sm font-bold text-gray-700">Consultas (Pedidos) Sin Atender</span>
+                <span
+                    class="text-xl font-black <?= $pedidosPendientes > 0 ? 'text-red-600' : 'text-green-600' ?>"><?= $pedidosPendientes ?></span>
+            </div>
+            <div
+                class="flex justify-between items-center p-4 bg-gray-50 rounded-2xl border <?= $totalMayoristasPendientes > 0 ? 'border-red-200' : 'border-gray-100' ?>">
+                <span class="text-sm font-bold text-gray-700">Solicitudes Mayoristas Sin Atender</span>
+                <span
+                    class="text-xl font-black <?= $totalMayoristasPendientes > 0 ? 'text-red-600' : 'text-green-600' ?>"><?= $totalMayoristasPendientes ?></span>
+            </div>
+
+            <?php if ($pedidosPendientes == 0 && $totalMayoristasPendientes == 0): ?>
+                <div class="text-center mt-6">
+                    <span class="text-3xl block mb-2">🎉</span>
+                    <p class="text-[10px] font-black uppercase tracking-widest text-green-600">Todo el CRM está al día</p>
+                </div>
+            <?php else: ?>
+                <div class="text-center mt-6">
+                    <span class="text-3xl block mb-2">⚠️</span>
+                    <p class="text-[10px] font-black uppercase tracking-widest text-red-500">Hay clientes esperando contacto
+                        rápido</p>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+
+    <div class="bg-white p-10 rounded-[40px] border border-gray-100 shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-violet-50 rounded-full -mr-16 -mt-16"></div>
+        <div class="flex justify-between items-center mb-6 relative z-10">
+            <h3 class="text-lg font-black text-gray-900 flex items-center gap-2">
+                Descargas de Lista Precios
+            </h3>
+            <span
+                class="bg-violet-100 text-violet-700 font-black text-sm px-4 py-1.5 rounded-xl"><?= $totalDescargasLista ?>
+                Totales</span>
+        </div>
+
+        <?php if (count($ultimasDescargas) > 0): ?>
+            <div class="space-y-2 mt-4 relative z-10">
+                <?php foreach ($ultimasDescargas as $d): ?>
+                    <div
+                        class="flex flex-col sm:flex-row justify-between sm:items-center p-3 hover:bg-gray-50 rounded-xl transition-colors border-b border-gray-50 last:border-0">
+                        <div>
+                            <span class="font-bold text-sm text-gray-900 block"><?= htmlspecialchars($d['nombre']) ?></span>
+                            <span
+                                class="text-[10px] font-black text-gray-400 tracking-widest uppercase"><?= htmlspecialchars($d['email']) ?></span>
+                        </div>
+                        <div class="flex flex-col sm:items-end mt-2 sm:mt-0">
+                            <a href="https://wa.me/<?= preg_replace('/[^0-9]/', '', $d['whatsapp']) ?>" target="_blank"
+                                class="text-green-600 font-bold text-xs hover:underline flex items-center gap-1">
+                                💬 <?= htmlspecialchars($d['whatsapp']) ?>
+                            </a>
+                            <span
+                                class="text-[9px] text-gray-400 uppercase tracking-widest mt-1"><?= date('d/m/Y H:i', strtotime($d['fecha'])) ?></span>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php else: ?>
+            <div class="text-center py-8 relative z-10">
+                <span class="text-4xl block mb-2 opacity-50">📄</span>
+                <p class="text-xs font-bold text-gray-400">Nadie ha descargado la lista aún</p>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
 
 <!-- Gráficos -->
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">

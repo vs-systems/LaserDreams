@@ -316,7 +316,96 @@ $marcas = $pdo->query("SELECT id, nombre FROM marcas ORDER BY nombre")->fetchAll
 
 </div>
 
+<!-- Modal Descarga de Lista -->
+<div id="modal-descarga-lista"
+    class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
+    <div
+        class="bg-white w-full max-w-md rounded-3xl shadow-2xl overflow-hidden transform animate-in slide-in-from-bottom-8 duration-500">
+        <div class="bg-violet-600 p-6 text-white relative">
+            <button onclick="cerrarMenuDescarga()"
+                class="absolute top-4 right-4 text-violet-200 hover:text-white transition-colors">✕</button>
+            <h3 class="text-xl font-black mb-1">Descargar Lista de Precios</h3>
+            <p class="text-sm text-violet-100 font-medium">Completá tus datos para acceder al documento actualizado.</p>
+        </div>
+
+        <form id="form-descarga-lista" class="p-6 space-y-4">
+            <div id="error-descarga"
+                class="hidden bg-red-50 text-red-600 p-3 rounded-xl text-sm font-bold border border-red-100"></div>
+
+            <div class="space-y-1">
+                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Nombre Completo</label>
+                <input type="text" id="descarga-nombre" required placeholder="Ej: Juan Pérez"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border-2 border-transparent focus:border-violet-500 focus:bg-white transition-all outline-none font-bold text-gray-900">
+            </div>
+
+            <div class="space-y-1">
+                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Email</label>
+                <input type="email" id="descarga-email" required placeholder="Ej: info@empresa.com"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border-2 border-transparent focus:border-violet-500 focus:bg-white transition-all outline-none font-bold text-gray-900">
+            </div>
+
+            <div class="space-y-1">
+                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">WhatsApp</label>
+                <input type="tel" id="descarga-whatsapp" required placeholder="Ej: 2235123456"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border-2 border-transparent focus:border-violet-500 focus:bg-white transition-all outline-none font-bold text-gray-900">
+            </div>
+
+            <button type="submit" id="btn-submit-descarga"
+                class="w-full bg-gray-900 text-white py-4 rounded-xl font-black text-xs uppercase tracking-widest mt-4 hover:bg-violet-600 transition-colors shadow-lg shadow-gray-200 flex justify-center items-center gap-2">
+                Descargar Archivo PDF
+            </button>
+        </form>
+    </div>
+</div>
+
 <script>
+    function cerrarMenuDescarga() {
+        document.getElementById('modal-descarga-lista').classList.add('hidden');
+    }
+
+    document.getElementById('form-descarga-lista').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const btn = document.getElementById('btn-submit-descarga');
+        const err = document.getElementById('error-descarga');
+
+        const data = {
+            nombre: document.getElementById('descarga-nombre').value,
+            email: document.getElementById('descarga-email').value,
+            whatsapp: document.getElementById('descarga-whatsapp').value
+        };
+
+        btn.disabled = true;
+        btn.innerHTML = 'Procesando...';
+        err.classList.add('hidden');
+
+        try {
+            const res = await fetch('/api/guardar_descarga_lista.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            const json = await res.json();
+
+            if (json.success) {
+                // Trigger download
+                window.open('/api/descargar_lista_precios.php', '_blank');
+                cerrarMenuDescarga();
+                document.getElementById('form-descarga-lista').reset();
+            } else {
+                err.textContent = json.error || 'Ocurrió un error inesperado.';
+                err.classList.remove('hidden');
+            }
+        } catch (error) {
+            err.textContent = 'Error de conexión. Intentá nuevamente.';
+            err.classList.remove('hidden');
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = 'Descargar Archivo PDF';
+        }
+    });
+
+    // Filtros originales
     function refreshFilters() {
         const cat = document.getElementById('filtroCategoria').value;
         const marc = document.getElementById('filtroMarca').value;

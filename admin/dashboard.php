@@ -54,22 +54,7 @@ require __DIR__ . '/../includes/db.php';
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- Informes -->
-        <a href="/admin/informes/index.php"
-          class="group bg-white p-10 rounded-[40px] border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 relative overflow-hidden">
-          <div
-            class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700">
-          </div>
-          <div class="relative">
-            <div class="text-4xl mb-6">📊</div>
-            <h3 class="text-2xl font-black text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Informes</h3>
-            <p class="text-gray-500 text-sm leading-relaxed mb-6 font-medium">Analiza el rendimiento del catálogo,
-              visitas y métricas clave de negocio.</p>
-            <span
-              class="inline-flex items-center text-blue-600 font-black text-[10px] uppercase tracking-widest gap-2 bg-blue-50 px-4 py-2 rounded-xl">Ver
-              Estadísticas <span>→</span></span>
-          </div>
-        </a>
+
 
         <!-- Productos -->
         <a href="/admin/productos/index.php"
@@ -135,13 +120,44 @@ require __DIR__ . '/../includes/db.php';
           </div>
         </a>
 
+        <!-- Informes -->
+        <a href="/admin/informes/index.php"
+          class="group bg-white p-10 rounded-[40px] border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 relative overflow-hidden">
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700">
+          </div>
+          <div class="relative">
+            <div class="text-4xl mb-6">📊</div>
+            <h3 class="text-2xl font-black text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Informes</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-6 font-medium">Analiza el rendimiento del catálogo,
+              visitas y métricas clave de negocio.</p>
+            <span
+              class="inline-flex items-center text-blue-600 font-black text-[10px] uppercase tracking-widest gap-2 bg-blue-50 px-4 py-2 rounded-xl">Ver
+              Estadísticas <span>→</span></span>
+          </div>
+        </a>
+
+        <!-- Marcas -->
+        <a href="/admin/marcas/index.php"
+          class="group bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden">
+          <div class="flex items-center gap-6">
+            <div
+              class="w-16 h-16 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
+              🏷️</div>
+            <div>
+              <h3 class="font-black text-gray-900 group-hover:text-red-600 transition-colors">Marcas</h3>
+              <p class="text-gray-400 text-[10px] font-black uppercase tracking-widest">Configurar marcas</p>
+            </div>
+          </div>
+        </a>
+
         <!-- Categorías -->
-        <a href="/admin/configuraciones/categorias.php"
+        <a href="/admin/categorias/index.php"
           class="group bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden">
           <div class="flex items-center gap-6">
             <div
               class="w-16 h-16 bg-violet-50 text-violet-600 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-violet-600 group-hover:text-white transition-all duration-300">
-              🏷️</div>
+              📁</div>
             <div>
               <h3 class="font-black text-gray-900 group-hover:text-violet-600 transition-colors">Categorías</h3>
               <p class="text-gray-400 text-[10px] font-black uppercase tracking-widest">Organización</p>
