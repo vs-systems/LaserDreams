@@ -126,7 +126,7 @@ require __DIR__ . '/../includes/header.php';
             <?php else: ?>
                 <div class="space-y-4">
                     <?php foreach ($productos as $item):
-                        $img = !empty($item['foto_principal']) ? '/uploads/' . $item['foto_principal'] : '/assets/img/logo.png';
+                        $img = !empty($item['foto_principal']) ? '/uploads/productos/' . $item['foto_principal'] : '/assets/img/logo.png';
                         ?>
                         <div
                             class="flex items-center gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50 transition-colors">

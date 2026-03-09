@@ -145,7 +145,7 @@ $marcas = $pdo->query("SELECT id, nombre FROM marcas ORDER BY nombre ASC")->fetc
                 <div id="lista-productos"
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-96 overflow-y-auto p-4 border rounded-2xl bg-gray-50">
                     <?php foreach ($productos as $p):
-                        $img = !empty($p['foto_principal']) ? '/uploads/' . $p['foto_principal'] : '/assets/img/logo.png';
+                        $img = !empty($p['foto_principal']) ? '/uploads/productos/' . $p['foto_principal'] : '/assets/img/logo.png';
                         ?>
                         <label
                             class="item-producto flex items-center gap-3 cursor-pointer group p-2 border border-transparent hover:border-violet-200 rounded-xl transition-all"
